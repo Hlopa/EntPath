@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'raleway-medium', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: $black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.5s;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1360px;
+  padding: 0px 40px;
+  margin: 0px auto;
+}
+
+.unselectable{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.block{
+  border-radius: 16px;
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.08);
+  padding: 32px 40px;
+  margin-bottom: 16px;
+  background-color: #fff;
+}
+
+.block__header {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.block__title {
+  margin-left: 10px;
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+//========Margins=======//
+
+.mb-58 {
+  margin-bottom: 58px;
+}
+
+
+.mb-42 {
+  margin-bottom: 42px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+

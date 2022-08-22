@@ -1,0 +1,88 @@
+.form-main {
+  width: 378px;
+  margin: 0px auto;
+}
+
+.form-header {
+  margin-bottom: 42px;
+}
+
+.form-title {
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.form-container{
+   width: 335px;
+   margin: 0px auto;
+}
+
+.form-footer{
+  text-align: center;
+  p{
+    color: $gray-dark;
+    margin-bottom: 16px;
+  }
+}
+
+.form-subtitle{
+text-align: center;
+position: relative;
+margin-bottom: 8px;
+&::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: $gray-light-2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+}
+
+.form-subtitle__title{
+  color: $gray;
+  display: inline-block;
+  background-color: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.form-text{
+  font-family: 'raleway-bold';
+  font-size: 14px;
+  color: $gray-dark;
+  margin-bottom: 13px;
+}
+
+.form-favourite-contact{
+  margin-top: -16px;
+  margin-bottom: 32px;
+  text-align: center;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.form-favourite-contact__list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-checkbox-label{
+  font-size: 12px;
+  padding-left: 6px;
+}
+
+.form-checkbox{
+  display: flex;
+  align-items: center;
+}
+
+.form-descr{
+  text-align: center;
+  color: $gray-dark;
+  line-height: 143%;
+  margin: 8px -24px 0px -24px;
+}

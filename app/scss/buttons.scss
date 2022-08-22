@@ -1,0 +1,92 @@
+.main-btn {
+  background-color: $main;
+  color: #fff;
+  font-family: 'raleway-semibold';
+  font-size: 16px;
+  line-height: 157%;
+  border-radius: 12px;
+  border: none;
+  width: 100%;
+  padding: 16px;
+  display: block;
+  text-align: center;
+}
+
+.main-btn:hover, .main-btn:focus {
+  background-color: $main-hover;
+}
+
+.main-btn:active {
+  background-color: $main-active;
+}
+
+.secondary-btn {
+  background-color: #fff;
+  color: $main;
+  font-family: 'raleway-semibold';
+  font-size: 16px;
+  line-height: 150%;
+  border-radius: 12px;
+  border: 1px solid $main;
+  width: 100%;
+  padding: 9px 16px 11px 16px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.secondary-btn svg {
+ margin-right: 8px;
+path{
+  transition: 0.3s;
+}
+}
+
+.secondary-btn:hover, .secondary-btn:focus {
+  color: $main-hover;
+  border: 1px solid $main-hover;
+  svg path{
+    fill:  $main-hover;
+  }
+}
+
+.secondary-btn:active {
+  color: $main-active;
+  border: 1px solid $main-active;
+  svg path{
+    fill:  $main-active;
+  }
+}
+
+.small-btn {
+  padding: 10px 16px 11px;
+  width: unset;
+  font-family: 'raleway-medium';
+}
+
+.btn-disabled {
+  background-color: $gray-light-2;
+  color: $gray;
+}
+
+
+
+.back-link {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 13px;
+  margin-left: 5px;
+
+  p {
+    color: $main;
+    margin-left: 14px;
+    font-family: 'raleway-semibold';
+  }
+}
+
+.btn-link {
+  color: $main;
+  font-family: 'raleway-semibold';
+}
+

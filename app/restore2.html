@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Track - Восстановление пароля</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons//apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons//apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons//apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons//apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons//apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons//apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon-180x180.png" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="/">
+        <img src="images/logo.svg" alt="Логотип платформы">
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="#">О траектории</a></li>
+          <li class="header-nav__item"><a href="#">Тарифы</a></li>
+          <li class="header-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="header-nav__btn">
+          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+      <main>
+        <div class="page-container">
+          <a class="back-link" href="/restore.html">
+            <img src="images/icons/arrow-left.svg" alt="Назад">
+            <p>Назад</p>
+          </a>
+          <div class="form-main">
+            <div class="form-header">
+              <h1 class="form-title">Новый пароль</h1>
+              <p class="form-descr">Придумайте новый пароль, который будет содержать латинские буквы и цфры, не менее 8 символов</p>
+            </div>
+
+            <form action="#" id="restore2">
+              <div class="mb-58">
+              <div class="input-group">
+                <input class="input-main" placeholder=" " id="password-1" type="password" autocomplete="off">
+                <label class="input-label">Новый пароль</label>
+                <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye-1', 'hide-eye-1')">
+                  <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-1">
+                  <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye">
+                </button>
+                <div class="input-error-message"></div>
+              </div>
+
+              <div class="input-group">
+                <input class="input-main" placeholder=" " id="password-2" type="password" autocomplete="off">
+                <label class="input-label">Повторите пароль</label>
+                <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-1-2')">
+                  <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-2">
+                  <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye-2">
+                </button>
+                <div class="input-error-message"></div>
+              </div>
+            </div>
+              <a href="/auth.html" class="main-btn">Сохранить</a>
+            </form>
+          </div>
+        </div>
+      </main>
+    </body>
+  </div>
+  <script src="js/lib.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>

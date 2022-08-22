@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Track - Восстановление пароля</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons//apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons//apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons//apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons//apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons//apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons//apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon-180x180.png" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="/">
+        <img src="images/logo.svg" alt="Логотип платформы">
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="#">О траектории</a></li>
+          <li class="header-nav__item"><a href="#">Тарифы</a></li>
+          <li class="header-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="header-nav__btn">
+          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+      <main>
+        <div class="page-container">
+          <a class="back-link" href="/auth.html">
+            <img src="images/icons/arrow-left.svg" alt="Назад">
+            <p>Назад</p>
+          </a>
+          <div class="form-main">
+            <div class="form-header">
+              <h1 class="form-title">Восстановить пароль</h1>
+              <p class="form-descr">Введите электронную почту указанную при регистрации, мы отправим на неё код
+                подтверждения</p>
+            </div>
+
+            <form action="#" id="restore">
+              <div class="input-group">
+                <input class="input-main" placeholder=" " id="login-email"
+                  oninput="return cleanInputIcon('login-email', 'login-email-clean')">
+                <label class="input-label">Электронная почта</label>
+                <img src="images/icons/cross.svg" id="login-email-clean" class="input-clean">
+                <div class="input-error-message"></div>
+              </div>
+              <a href="/restore2.html" class="main-btn">Отправить код</a>
+            </form>
+          </div>
+        </div>
+      </main>
+    </body>
+  </div>
+  <script src="js/lib.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
