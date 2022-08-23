@@ -24,7 +24,41 @@ document.addEventListener("click", function (e) {
       toggleMenu();
   }
 });
-  
+
+
+//=====================Логика переключения шагов при записи к траектологу
+
+const createAppointmentBlock = document.querySelector('.create-appointment__block'),
+allTraektologies = createAppointmentBlock.querySelectorAll('.create-appointment__traektologies-item'),
+firstStepTab = document.getElementById('create-appointment__firstStep'),
+secondStepTab = document.getElementById('create-appointment__secondStep'),
+thirdStepTab = document.getElementById('create-appointment__thirdStep'),
+firstStepBlock = createAppointmentBlock.querySelector('.create-appointment__traektologies-list'),
+secondStepBlock = createAppointmentBlock.querySelector('.create-appointment__selected-targetolog'),
+thirdStepBlock = createAppointmentBlock.querySelector('.create-appointment__pay'),
+payBtn = createAppointmentBlock.querySelector('.pay-btn');
+
+allTraektologies.forEach(traektolog => {
+  traektolog.addEventListener("click", () => {
+    firstStepTab.classList.remove('active');
+    firstStepTab.classList.add('success');
+    secondStepTab.classList.add('active');
+    firstStepBlock.classList.add('transition-left');
+    secondStepBlock.classList.add('active')
+  })
+})
+
+payBtn.addEventListener('click', () => {
+   console.log(this);
+  secondStepTab.classList.remove('active');
+  secondStepTab.classList.add('success');
+
+  secondStepBlock.classList.remove('active')
+  secondStepBlock.classList.add('transition-left')
+
+  thirdStepTab.classList.add('active')
+  thirdStepBlock.classList.add('active')
+}) 
 
 //Функция для очистки зачения инпута при нажатии на крестик
 function cleanInputIcon(inputValueId, iconId) {
@@ -111,6 +145,5 @@ function onlyOne(checkbox) {
       if (item !== checkbox) item.checked = false
   })
 }
-
 
 })

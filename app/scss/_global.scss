@@ -68,6 +68,11 @@ button {
   margin: 0px auto;
 }
 
+.main-page{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .unselectable{
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -76,6 +81,16 @@ button {
   -ms-user-select: none;       /* Internet Explorer/Edge */
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
+}
+
+.main-title {
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.link{
+  color: $main;
 }
 
 .block{
@@ -96,6 +111,56 @@ button {
   margin-left: 10px;
   font-size: 24px;
   margin-bottom: 3px;
+}
+
+.title-withIcon{
+  display: flex;
+  align-items: center;
+  span{
+    text-transform: uppercase;
+    color: $gray;
+    font-size: 12px;
+    font-family: 'raleway-bold';
+    margin-left: 6px;
+  }
+}
+
+.semibold-title{
+  font-family: 'raleway-semibold';
+  line-height: 150%;
+}
+
+.descr-text{
+  color: $gray-dark;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.descr-text-gray{
+  color: $gray;
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.dg{
+  display: grid;
+  
+}
+
+.rg-6{
+  row-gap: 6px;
+}
+
+.rg-8{
+  row-gap: 8px;
+}
+
+.rg-12{
+  row-gap: 12px;
+}
+
+.rg-32{
+  row-gap: 32px;
 }
 
 //========Margins=======//
