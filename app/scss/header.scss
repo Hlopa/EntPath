@@ -44,13 +44,23 @@
 .header-profile__menu-item {
   cursor: pointer;
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  line-height: 143%;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
 
   span {
     margin-left: 8px;
     white-space: nowrap;
   }
+}
+
+.icon-user-header-menu::before {
+  font-size: 13px;
+  color: $black;
+
 }
 
 .header-profile__menu-item--danger {

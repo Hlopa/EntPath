@@ -61,6 +61,31 @@ button {
   padding: 0px;
 }
 
+i{
+  flex-shrink: 0;
+  line-height: 50%;
+  display: inline-block;
+  &::before{
+    transition: all 0.3s;
+  }
+}
+
+
+//======================= containers, blocks ============================//
+
+.g-block{
+  border-radius: 16px;
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.08);
+  padding: 32px 40px;
+  background-color: #fff;
+  position: relative;
+}
+
+.g-page-container {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
 .container {
   width: 100%;
   max-width: 1360px;
@@ -68,9 +93,43 @@ button {
   margin: 0px auto;
 }
 
-.main-page{
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+//==========================typography==================================//
+
+.g-main-title {
+  font-size: 32px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.g-text-gray{
+  color: $gray;
+}
+
+.g-text-darkgray{
+  color: $gray-dark;
+}
+
+.g-text-semibold{
+  font-family: 'raleway-semibold';
+  line-height: 150%;
+}
+
+.g-text-fs-12{
+  font-size: 12px;
+}
+
+.g-text-fs-14{
+  font-size: 14px;
+  line-height: 143%;
+}
+
+.g-text-fs-32{
+  font-size: 32px;
+}
+
+.color-main{
+  color: $main;
 }
 
 .unselectable{
@@ -83,68 +142,12 @@ button {
                                   not supported by any browser */
 }
 
-.main-title {
-  font-size: 32px;
-  line-height: 125%;
-  text-align: center;
-}
 
-.link{
-  color: $main;
-}
 
-.block{
-  border-radius: 16px;
-  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.08);
-  padding: 32px 40px;
-  margin-bottom: 16px;
-  background-color: #fff;
-}
-
-.block__header {
-  display: flex;
-  align-items: center;
- 
-}
-
-.block__title {
-  margin-left: 10px;
-  font-size: 24px;
-  margin-bottom: 3px;
-}
-
-.title-withIcon{
-  display: flex;
-  align-items: center;
-  span{
-    text-transform: uppercase;
-    color: $gray;
-    font-size: 12px;
-    font-family: 'raleway-bold';
-    margin-left: 6px;
-  }
-}
-
-.semibold-title{
-  font-family: 'raleway-semibold';
-  line-height: 150%;
-}
-
-.descr-text{
-  color: $gray-dark;
-  font-size: 14px;
-  line-height: 143%;
-}
-
-.descr-text-gray{
-  color: $gray;
-  font-size: 14px;
-  line-height: 143%;
-}
+//=====================grid systems=================//
 
 .dg{
   display: grid;
-  
 }
 
 .rg-6{
@@ -159,8 +162,28 @@ button {
   row-gap: 12px;
 }
 
+.rg-16{
+  row-gap: 16px;
+}
+
+.rg-20{
+  row-gap: 20px;
+}
+
+.rg-24{
+  row-gap: 24px;
+}
+
 .rg-32{
   row-gap: 32px;
+}
+
+.rg-40{
+  row-gap: 40px;
+}
+
+.rg-48{
+  row-gap: 48px;
 }
 
 //========Margins=======//
@@ -186,7 +209,18 @@ button {
   margin-bottom: 16px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-8 {
   margin-bottom: 8px;
 }
 
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.mb-2 {
+  margin-bottom: 2px;
+}

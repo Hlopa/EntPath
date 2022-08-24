@@ -28,7 +28,7 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="#">Тарифы</a></li>
+          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-nav__btn">
@@ -38,25 +38,21 @@
     </header>
 
     <body>
-      <main>
-        <div class="page-container">
-          <a class="back-link" href="/restore.html">
-            <img src="images/icons/arrow-left.svg" alt="Назад">
-            <p>Назад</p>
-          </a>
-          <div class="form-main">
-            <div class="form-header">
-              <h1 class="main-title">Новый пароль</h1>
-              <p class="form-descr">Придумайте новый пароль, который будет содержать латинские буквы и цфры, не менее 8 символов</p>
-            </div>
+      <main class="g-page-container">
+        <div class="form-main">
+          <div class="form-header">
+            <h1 class="main-title">Новый пароль</h1>
+            <p class="form-descr">Придумайте новый пароль, который будет содержать латинские буквы и цифры, не менее 8
+              символов</p>
+          </div>
 
-            <form action="#" id="restore2">
-              <div class="mb-58">
+          <form action="#" id="restore2">
+            <div class="mb-58">
               <div class="input-group">
                 <input class="input-main" placeholder=" " id="password-1" type="password" autocomplete="off">
                 <label class="input-label">Новый пароль</label>
-                <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye-1', 'hide-eye-1')">
-                  <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-1">
+                <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye', 'hide-eye')">
+                  <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye">
                   <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye">
                 </button>
                 <div class="input-error-message"></div>
@@ -65,16 +61,15 @@
               <div class="input-group">
                 <input class="input-main" placeholder=" " id="password-2" type="password" autocomplete="off">
                 <label class="input-label">Повторите пароль</label>
-                <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-1-2')">
+                <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-2')">
                   <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-2">
                   <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye-2">
                 </button>
                 <div class="input-error-message"></div>
               </div>
             </div>
-              <a href="/auth.html" class="main-btn">Сохранить</a>
-            </form>
-          </div>
+            <a href="/auth.html" class="main-btn">Сохранить</a>
+          </form>
         </div>
       </main>
     </body>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Восстановление пароля</title>
+  <title>Live Track - Выбор тарифа</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
@@ -32,34 +32,32 @@
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+          <button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
+          <div class="header-profile__menu">
+						<ul>
+							<li class="header-profile__menu-item">
+								<img src="images/icons/profile-small.svg"><span>Личный кабинет</span>
+								</li>
+							<li class="header-profile__menu-item header-profile__menu-item--danger">
+								<img src="images/icons/out.svg"><span>Выйти из личного кабинета</span>
+							</li>
+						</ul>
+					</div>
         </div>
       </nav>
     </header>
 
     <body>
-      <main class="g-page-container">
-          <div class="form-main">
-            <div class="form-header">
-              <h1 class="g-main-title">Восстановить пароль</h1>
-              <p class="form-descr">Введите электронную почту указанную при регистрации, мы отправим на неё код
-                подтверждения</p>
-            </div>
-
-            <form action="#" id="restore">
-              <div class="input-group">
-                <input class="input-main" placeholder=" " id="login-email"
-                  oninput="return cleanInputIcon('login-email', 'login-email-clean')">
-                <label class="input-label">Электронная почта</label>
-                <img src="images/icons/cross.svg" id="login-email-clean" class="input-clean">
-                <div class="input-error-message"></div>
-              </div>
-              <a href="/restore2.html" class="main-btn">Отправить код</a>
-            </form>
-          </div>
+      <main>
+        <div class="fariffs-page">
+          <a class="main-btn small-btn" href="/choose-day.html">Тариф без выбора тректолога</a>
+          <a class="secondary-btn" href="/appointment.html">Тариф с выбором траектолога</a>
+        </div>
       </main>
     </body>
   </div>
   <script src="js/lib.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Регистрация</title>
+  <title>Live Track - Редактирование профиля</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
@@ -32,16 +32,35 @@
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
-        </div>
+					<button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
+					<div class="header-profile__menu">
+						<ul>
+							<li class="header-profile__menu-item">
+								<a href="/">
+									<img src="images/icons/profile-small.svg"><span>Личный кабинет</span>
+								</a>
+							</li>
+							<li class="header-profile__menu-item header-profile__menu-item--danger">
+								<a href="/auth.html">
+									<img src="images/icons/out.svg"><span>Выйти из личного кабинета</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
       </nav>
     </header>
 
     <body>
-      <main class="g-page-container">
+      <main>
+        <div class="page-container">
+          <a class="back-link" href="/auth.html">
+            <img src="images/icons/arrow-left.svg" alt="Назад">
+            <p>Назад</p>
+          </a>
           <div class="form-main">
             <div class="form-header">
-              <h1 class="main-title">Регистрация</h1>
+              <h1 class="main-title">Редактировать профиль</h1>
             </div>
 
             <form action="#" class="mb-42" id="register" autocomplete="off">
@@ -132,8 +151,8 @@
                     <div class="input-group">
                       <input class="input-main" placeholder=" " id="password-1" type="password" autocomplete="off">
                       <label class="input-label">Пароль</label>
-                      <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye', 'hide-eye')">
-                        <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye">
+                      <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye-1', 'hide-eye-1')">
+                        <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-1">
                         <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye">
                       </button>
                       <div class="input-error-message"></div>
@@ -142,7 +161,7 @@
                     <div class="input-group">
                       <input class="input-main" placeholder=" " id="password-2" type="password" autocomplete="off">
                       <label class="input-label">Подтвердите пароль</label>
-                      <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-2')">
+                      <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-1-2')">
                         <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-2">
                         <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye-2">
                       </button>
@@ -150,15 +169,12 @@
                     </div>
                   </div>
                 </div>
-
-                <a href="/" class="main-btn">Зарегистрироваться</a>
+                <a href="/restore.html" class="btn-link mb-32">Я не помню свой пароль</a>
+                <a href="/" class="main-btn">Сохранить</a>
               </div>
             </form>
-            <div class="form-footer">
-              <p>Уже есть личный кабинет?</p>
-              <a href="/auth.html" class="btn-link">Войти</a>
-            </div>
           </div>
+        </div>
       </main>
     </body>
   </div>

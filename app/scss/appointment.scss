@@ -1,0 +1,186 @@
+.appointment {
+  width: 552px;
+  margin: 50px auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.appointment__tabs {
+  padding-left: 26px;
+  padding-right: 26px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: $main;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    z-index: -1;
+  }
+}
+
+.appointment__tab {
+  padding-left: 4px;
+  padding-right: 4px;
+  background-color: #fff;
+  cursor: default;
+}
+
+.appointment__tab-inner {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  background-color: $gray-bg;
+  border-radius: 8px;
+
+  span {
+    color: $gray;
+    font-size: 14px;
+    line-height: 145%;
+    margin-bottom: 1px;
+  }
+
+  div {
+    background-color: $gray;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'raleway-bold';
+    margin-right: 8px;
+    line-height: 15px;
+
+    i::before {
+      display: none;
+    }
+  }
+}
+
+.appointment__tab.active {
+  .appointment__tab-inner {
+    background-color: $main-hover;
+
+    span {
+      color: #fff;
+    }
+
+    div {
+      background-color: #fff;
+      color: $main;
+    }
+  }
+}
+
+.appointment__tab.success {
+  .appointment__tab-inner {
+    background-color: $main-active;
+
+    span {
+      color: #fff;
+    }
+
+    div {
+      background-color: #fff;
+      color: $main;
+      font-size: 0px;
+
+      i::before {
+        display: inline-block;
+        font-size: 8px;
+      }
+    }
+  }
+}
+
+.appointment__steps {
+  position: relative;
+  text-align: left;
+}
+
+
+//============================== шаги записи к траектологу. Шаг 1 ================//
+
+.appointment__traektologies {
+  transition: all 0.3s;
+  position: relative;
+  transform: translateX(0);
+}
+
+.appointment__traektologies.transition-left {
+  transform: translateX(-110%);
+  position: absolute;
+}
+
+.appointment__traektolog-item {
+  cursor: pointer;
+  padding: 15px 21px 15px 16px;
+  border-radius: 12px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background-color: $gray-bg;
+
+    .appointment__traektolog-arrow::before {
+      color: $main
+    }
+
+    .appointment__traektolog-name {
+      color: $main
+    }
+  }
+}
+
+.appointment__traektolog-img {
+  width: 65px;
+  height: 65px;
+  border-radius: 12px;
+  @include image;
+}
+
+.appointment__traektolog-info {
+  padding-left: 8px;
+  padding-right: 15px;
+  flex-grow: 1;
+}
+
+.appointment__traektolog-name {
+  font-family: 'raleway-semibold';
+  margin-bottom: 2px;
+  line-height: 150%;
+  transition: 0.3s;
+}
+
+.appointment__traektolog-descr {
+  color: $gray-dark;
+  font-size: 14px;
+  line-height: 143%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//================================== шаг 2 =====================//
+
+.appointment__selected-traektolog {
+  position: absolute;
+  transition: 0.3s;
+  transform: translateX(800px);
+}
+
+.appointment__selected-traektolog.active {
+  position: relative;
+  transform: translateX(0px);
+}
+

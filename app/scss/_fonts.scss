@@ -71,3 +71,104 @@
     font-weight: 900;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?thnq0o');
+    src:  url('../fonts/icomoon.eot?thnq0o#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?thnq0o') format('truetype'),
+      url('../fonts/icomoon.woff?thnq0o') format('woff'),
+      url('../fonts/icomoon.svg?thnq0o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow-back:before {
+    content: "\e900";
+    color: #5656ff;
+  }
+  .icon-arrow-down:before {
+    content: "\e901";
+    color: #9a9aa0;
+  }
+  .icon-arrow-right:before {
+    content: "\e902";
+    color: #9a9aa0;
+  }
+  .icon-arrow-up:before {
+    content: "\e903";
+    color: #9a9aa0;
+  }
+  .icon-calendar:before {
+    content: "\e904";
+    color: #9a9aa0;
+  }
+  .icon-clock:before {
+    content: "\e905";
+    color: #9a9aa0;
+  }
+  .icon-close:before {
+    content: "\e906";
+    color: #9a9aa0;
+  }
+  .icon-edit:before {
+    content: "\e907";
+    color: #5656ff;
+  }
+  .icon-eye:before {
+    content: "\e908";
+    color: #9a9aa0;
+  }
+  .icon-info:before {
+    content: "\e909";
+    color: #9a9aa0;
+  }
+  .icon-out:before {
+    content: "\e90a";
+    color: #f00;
+  }
+  .icon-passHide:before {
+    content: "\e90b";
+    color: #9a9aa0;
+  }
+  .icon-phone:before {
+    content: "\e90c";
+    color: #5656ff;
+    font-size: 17px;
+  }
+  .icon-success:before {
+    content: "\e90d";
+    color: #bfbfff;
+  }
+  .icon-telegram:before {
+    content: "\e90e";
+    color: #5656ff;
+    font-size: 16px;
+  }
+  .icon-user:before {
+    content: "\e90f";
+    color: #9a9aa0;
+    font-size: 18px;
+  }
+  .icon-whatsapp:before {
+    content: "\e910";
+    color: #5656ff;
+    font-size: 16px;
+  }
+  

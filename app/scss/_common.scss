@@ -1,0 +1,97 @@
+
+//================================ common__pay-item =============================//
+
+.common__pay-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
+  align-items: center;
+
+  span, div {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.common__pay-item::before {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  content: '';
+  border-bottom: 1px dashed $gray-light-2;
+}
+
+
+//================================ common__contact-list =============================//
+
+.common__contacts-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.common__contacts-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.common__contacts-item {
+  a {
+    display: flex;
+    align-items: center;
+    color: $main;
+    font-size: 14px;
+    font-family: "raleway-semibold";
+    line-height: 157%;
+    i{
+      margin-right: 5px;
+    }
+  }
+}
+
+
+//=============================title with icon ===========================//
+
+.common-title-withIcon{
+  display: flex;
+  align-items: center;
+  span{
+    text-transform: uppercase;
+    color: $gray;
+    font-size: 12px;
+    font-family: 'raleway-bold';
+    margin-left: 6px;
+  }
+  i::before{
+  font-size: 14px;
+}
+}
+
+
+//=============================traektolog info ===========================//
+
+.common-traektolog__info{
+  display: flex;
+  align-items: center;
+}
+
+.common-traektolog__info-img{
+  width: 108px;
+  height: 108px;
+  border-radius: 24px;
+  margin-right: 16px;
+  @include image
+}
+
+.common-traektolog__info-descr{
+  color: $gray-dark;
+  line-height: 135%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Live Track</title>
+	<title>Live Track - Профиль</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
@@ -27,8 +27,8 @@
 			</a>
 			<nav class="header-nav">
 				<ul class="header-nav__list">
-					<li class="header-nav__item"><a href="/create-appointment.html">О траектории</a></li>
-					<li class="header-nav__item"><a href="#">Тарифы</a></li>
+					<li class="header-nav__item"><a href="#">О траектории</a></li>
+					<li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
 					<li class="header-nav__item"><a href="#">Контакты</a></li>
 				</ul>
 				<div class="header-nav__btn">
@@ -36,10 +36,16 @@
 					<div class="header-profile__menu">
 						<ul>
 							<li class="header-profile__menu-item">
-								<img src="images/icons/profile-small.svg"><span>Личный кабинет</span>
-								</li>
+								<a href="/">
+									<i class="icon-user icon-user-header-menu"></i>
+									<span>Личный кабинет</span>
+								</a>
+							</li>
 							<li class="header-profile__menu-item header-profile__menu-item--danger">
-								<img src="images/icons/out.svg"><span>Выйти из личного кабинета</span>
+								<a href="/auth.html">
+									<i class="icon-out"></i>
+									<span>Выйти из личного кабинета</span>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -48,100 +54,208 @@
 		</header>
 
 		<body>
-			<main class="profile">
-				<section class="block profile-block">
-					<div class="block__header mb-16">
-						<img src="images/icons/profile.svg">
-						<h3 class="block__title">Профиль</h3>
-					</div>
-					<div class="profile-block__info profile-info mb-24">
-						<div class="profile-info__item profile-item">
-							<span class="profile-item__title">ФИО:</span>
-							<span>Скороходов Алексей, 32 года</span>
-						</div>
-						<div class="profile-info__item">
-							<span class="profile-item__title">Дата рождения:</span>
-							<span>15.06.1990</span>
-						</div>
-						<div class="profile-info__item">
-							<span class="profile-item__title">Страна, город:</span>
-							<span>Россия, Москва</span>
-						</div>
-						<div class="profile-info__item">
-							<span class="profile-item__title">Должность:</span>
-							<span>UI-дизайнер</span>
-						</div>
-						<div class="profile-info__item">
-							<span class="profile-item__title">Телефон:</span>
-							<span>+7 (999) 888 88 88</span>
-						</div>
-						<div class="profile-info__item">
-							<span class="profile-item__title">Электронная почта: </span>
-							<span>alexXx_skorohod@mail.ru</span>
-						</div>
-					</div>
-
-					<a href="/register.html" class="secondary-btn"> <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
-							<path fill-rule="evenodd" clip-rule="evenodd"
-								d="M13.0774 1.91051C14.3234 0.664596 16.3434 0.664598 17.5893 1.91051C18.8352 3.15642 18.8352 5.17644 17.5893 6.42235L6.58403 17.4276C6.57006 17.4416 6.55622 17.4554 6.54249 17.4692C6.33841 17.6736 6.15839 17.8539 5.9445 17.9949C5.75645 18.1189 5.55251 18.217 5.3382 18.2863C5.09444 18.3652 4.84118 18.3932 4.55407 18.4248C4.53476 18.427 4.5153 18.4291 4.49567 18.4313L1.67536 18.7447C1.42376 18.7726 1.17309 18.6847 0.994083 18.5057C0.815077 18.3267 0.727146 18.076 0.755102 17.8244L1.06847 15.0041C1.07065 14.9845 1.0728 14.965 1.07493 14.9457C1.1066 14.6586 1.13453 14.4053 1.21344 14.1616C1.28282 13.9473 1.38084 13.7433 1.50485 13.5553C1.64589 13.3414 1.8262 13.1614 2.03061 12.9573C2.04436 12.9435 2.05822 12.9297 2.07219 12.9157L13.0774 1.91051ZM16.4108 3.08902C15.8157 2.49398 14.851 2.49398 14.256 3.08902L3.2507 14.0942C2.98195 14.363 2.93205 14.4185 2.89623 14.4728C2.85489 14.5355 2.82222 14.6035 2.79909 14.6749C2.77905 14.7368 2.76692 14.8104 2.72494 15.1882L2.52661 16.9732L4.31162 16.7748C4.68937 16.7329 4.76297 16.7207 4.82489 16.7007C4.89632 16.6776 4.9643 16.6449 5.02699 16.6035C5.08132 16.5677 5.13677 16.5178 5.40552 16.2491L16.4108 5.24384C17.0058 4.6488 17.0058 3.68406 16.4108 3.08902Z"
-								fill="#5656FF" />
-						</svg>
-						Изменить</a>
-
-				</section>
-
-				<section class="block session-block">
-					<div class="block__header mb-16">
-						<img src="images/icons/clock.svg">
-						<h3 class="block__title">Сессия с траектологом</h3>
-					</div>
-					<div class="session-block__main mb-24">
-						<p class="session-block__data">Понедельник, 24 августа, 15:00 (МСК)</p>
-						<div class="session-block__traektolog session-traektolog">
-							<div class="session-traektolog__img">
-								<img src="images/mockImg/traektolog.png" alt="Фото траектолога">
+			<main class="profile g-page">
+				<div class="profile-grid">
+					<div class="profile-grid__half-block">
+						<!---------------------- Профайл пользователя ---------------------->
+						<article class="g-block ">
+							<div class="profile__block-header mb-16">
+								<i class="icon-user"></i>
+								<h3 class="profile__block-title">Профиль</h3>
 							</div>
-							<div class="session-traektolog__info">
-								<p class="session-traektolog__info-title">Ваш траектолог</p>
-								<p class="session-traektolog__info-name">Александра Галицкая</p>
-								<p class="session-traektolog__info-descr">Ясность нашей позиции очевидна: граница обучения кадров
-									выявляет срочную потребность системы обучения кадров</p>
+
+							<ul class="dg rg-16 mb-24">
+								<li>
+									<span class="g-text-gray">ФИО:</span>
+									<span>Скороходов Алексей, 32 года</span>
+								</li>
+								<li>
+									<span class="g-text-gray">Дата рождения:</span>
+									<span>15.06.1990</span>
+								</li>
+								<li>
+									<span class="g-text-gray">Страна, город:</span>
+									<span>Россия, Москва</span>
+								</li>
+								<li>
+									<span class="g-text-gray">Должность:</span>
+									<span>UI-дизайнер</span>
+								</li>
+								<li>
+									<span class="g-text-gray">Телефон:</span>
+									<span>+7 (999) 888 88 88</span>
+								</li>
+								<li>
+									<span class="g-text-gray">Электронная почта: </span>
+									<span>alexXx_skorohod@mail.ru</span>
+								</li>
+							</ul>
+
+							<a href="/edit-profile.html" class="secondary-btn">
+								<i class="icon-edit btn-icon-edit"></i>
+								Изменить
+							</a>
+						</article>
+
+						<!---------------------- Сессия с траектологом ---------------------->
+						<article class="g-block">
+							<div class="profile__block-header mb-16">
+								<img src="images/icons/clock.svg">
+								<h3 class="profile__block-title">Сессия с траектологом</h3>
 							</div>
+
+							<div class="mb-24 dg rg-16">
+								<p class="g-text-semibold">Понедельник, 24 августа, 15:00 (МСК)</p>
+								<div class="profile__traektolog">
+									<div class="profile__traektolog-img">
+										<img src="images/mockImg/traektolog.png" alt="Фото траектолога">
+									</div>
+									<div>
+										<p class="profile__traektolog-title">Ваш траектолог</p>
+										<p class="g-text-semibold">Александра Галицкая</p>
+										<p class="profile__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+											выявляет срочную потребность системы обучения кадров</p>
+									</div>
+								</div>
+								<div class="dg rg-8">
+									<a href="#" class="main-btn small-btn">Перейти к встрече</a>
+									<p class="g-text-gray g-text-fs-12">По нажатию кнопки будет открыта ссылка на звонок в «Zoom»
+									</p>
+								</div>
+							</div>
+
+							<div class="dg rg-6">
+								<p class="g-text-gray g-text-fs-14">Если хотите изменить дату встречи, свяжитесь с нами</p>
+								<ul class="common__contacts-list">
+									<li class="common__contacts-item">
+										<a href="tel:+79998888888" aria-label="контактный телефон">
+											<i class="icon-phone"></i>
+											+7 (999) 888 88 88</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
+											<i class="icon-whatsapp"></i>
+											WhatsApp</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
+											<i class="icon-telegram"></i>
+											Telegram</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!---------------------- Сессии еще нет ---------------------->
+						<article class="g-block">
+							<div class="profile__block-header mb-16">
+								<img src="images/icons/clock.svg">
+								<h3 class="profile__block-title">Сессия с траектологом</h3>
+							</div>
+
+							<p class="g-text-semibold mb-24">Следующая сессия будет установлена позже, ожидайте администратора</p>
+
+							<div class="dg rg-6">
+								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+								<ul class="common__contacts-list">
+									<li class="common__contacts-item">
+										<a href="tel:+79998888888" aria-label="контактный телефон">
+											<i class="icon-phone"></i>
+											+7 (999) 888 88 88</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
+											<i class="icon-whatsapp"></i>
+											WhatsApp</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
+											<i class="icon-telegram"></i>
+											Telegram</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!---------------------- Сессии еще нет, выбрать тариф---------------------->
+						<article class="g-block">
+							<div class="profile__block-header mb-16">
+								<img src="images/icons/clock.svg">
+								<h3 class="profile__block-title">Сессия с траектологом</h3>
+							</div>
+
+							<div class="mb-24">
+								<p class="g-text-semibold mb-16">Выберите тариф для записи на сессию</p>
+								<a class="main-btn small-btn" href="/tariffs.html">Смотреть тарифы</a>
+							</div>
+
+							<div class="dg rg-6">
+								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+								<ul class="common__contacts-list">
+									<li class="common__contacts-item">
+										<a href="tel:+79998888888" aria-label="контактный телефон">
+											<i class="icon-phone"></i>
+											+7 (999) 888 88 88</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
+											<i class="icon-whatsapp"></i>
+											WhatsApp</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
+											<i class="icon-telegram"></i>
+											Telegram</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+
+						<!---------------------- Сессия прошла---------------------->
+						<article class="g-block">
+							<div class="profile__block-header mb-16">
+								<img src="images/icons/clock.svg">
+								<h3 class="profile__block-title">Сессия с траектологом</h3>
+							</div>
+
+							<p class="g-text-gray g-text-fs-12 mb-16">Сессия прошла</p>
+
+							<div class="dg rg-6">
+								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+								<ul class="common__contacts-list">
+									<li class="common__contacts-item">
+										<a href="tel:+79998888888" aria-label="контактный телефон">
+											<i class="icon-phone"></i>
+											+7 (999) 888 88 88</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
+											<i class="icon-whatsapp"></i>
+											WhatsApp</a>
+									</li>
+									<li class="common__contacts-item">
+										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
+											<i class="icon-telegram"></i>
+											Telegram</a>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+
+					<!---------------------- Блок с ссылкой на траекторию---------------------->
+					<article class="g-block">
+						<div class="profile__block-header mb-16">
+							<img src="images/icons/logo-icon.svg">
+							<h3 class="profile__block-title">Ваша траектория</h3>
 						</div>
-						<a href="" class="main-btn small-btn mb-8">Перейти к встрече</a>
-						<p class="session-traektolog__btn-subDescr">По нажатию кнопки будет открыта ссылка на звонок в «Zoom»</p>
-					</div>
-					<div class="session-block__footer section-footer">
-						<p class="session-block__footer-descr">Если хотите изменить дату встречи, свяжитесь с нами</p>
-						<ul class="section-footer__contacts-list">
-							<li class="section-footer__contacts-item">
-								<a href="tel:+79998888888" aria-label="контактный телефон" class="">
-									<img src="images/icons/phone.svg" alt="контактный телефон">
-									+7 (999) 888 88 88</a>
-							</li>
-							<li class="section-footer__contacts-item">
-								<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-									<img src="images/icons/whatsapp.svg" alt="whatsapp">
-									WhatsApp</a>
-							</li>
-							<li class="section-footer__contacts-item">
-								<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-									<img src="images/icons/telegram.svg" alt="telegram">
-									Telegram</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="block link-block">
-					<div class="block__header mb-16">
-						<img src="images/icons/logo-icon.svg">
-						<h3 class="block__title">Ваша траектория</h3>
-					</div>
-					<a href="https://www.skolkovo.ru/professors/aleksey-komarov/" class="link-block__link" target='_blank' rel="noreferrer"
-						aria-label="Ссылка на вашу траекторию">https://www.skolkovo.ru/professors/aleksey-komarov/</a>
-				</section>
+
+						<a href="https://www.skolkovo.ru/professors/aleksey-komarov/"
+							class="g-text-fs-14 color-main g-text-semibold" target='_blank' rel="noreferrer"
+							aria-label="Ссылка на вашу траекторию">https://www.skolkovo.ru/professors/aleksey-komarov/</a>
+					</article>
+				</div>
 			</main>
-
 		</body>
 	</div>
 	<script src="js/lib.min.js"></script>

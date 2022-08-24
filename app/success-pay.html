@@ -28,106 +28,126 @@
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="#">Тарифы</a></li>
+          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
           <li class="header-nav__item"><a href="#">Контакты</a></li>
         </ul>
         <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+          <button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
+          <div class="header-profile__menu">
+            <ul>
+              <li class="header-profile__menu-item">
+                <a href="/">
+                  <i class="icon-user icon-user-header-menu"></i>
+                  <span>Личный кабинет</span>
+                </a>
+              </li>
+              <li class="header-profile__menu-item header-profile__menu-item--danger">
+                <a href="/auth.html">
+                  <i class="icon-out"></i>
+                  <span>Выйти из личного кабинета</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <body>
       <main class="success-pay">
-        <div class="page-container ">
-          <div class="block success-pay__container">
-            <h1 class="success-pay__title mb-16">Оплата прошла успешно!</h1>
-            <div class="dg rg-32">
-              <div>
-                <div class="title-withIcon mb-8">
-                  <img src="images/icons/profile-small-gray.svg">
-                  <span>Ваш траектолог</span>
+        <div class="g-block success-pay__container">
+          <h1 class="g-text-fs-32 mb-16">Оплата прошла успешно!</h1>
+          <div class="dg rg-32">
+
+            <div>
+              <div class="common-title-withIcon mb-16">
+                <i class="icon-user"></i>
+                <span>Ваш траектолог</span>
+              </div>
+              <div class="common-traektolog__info">
+                <div class="common-traektolog__info-img">
+                  <img src="images/mockImg/traektolog3.png" alt="фото траектолога">
                 </div>
-                <div class="traektolog__info">
-                  <div class="traektolog__info-img">
-                    <img src="images/mockImg/traektolog3.png" alt="фото траектолога">
-                  </div>
-                  <div>
-                    <p class="traektolog__info-name">
-                      Анастасия Мельничук
-                    </p>
-                    <p class="traektolog__info-descr">Ясность нашей позиции очевидна: граница обучения кадров выявляет
-                      срочную
-                      потребность системы обучения кадров, соответствующей насущным потребностям. А также акционеры
-                      крупнейших компаний.</p>
-                  </div>
+                <div>
+                  <p class="g-text-semibold mb-2">
+                    Анастасия Мельничук
+                  </p>
+                  <p class="common-traektolog__info-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                    выявляет срочную
+                    потребность системы обучения кадров, соответствующей насущным потребностям. А также акционеры
+                    крупнейших компаний.</p>
                 </div>
               </div>
+            </div>
 
+            <div>
+              <div class="common-title-withIcon mb-8">
+                <i class="icon-calendar"></i>
+                <span>Дата и место встречи</span>
+              </div>
               <div class="dg rg-12">
                 <div class="dg rg-6">
-                  <div class="title-withIcon">
-                    <img src="images/icons/calendar.svg">
-                    <span>Дата и место встречи</span>
-                  </div>
                   <p>Понедельник, 24 августа, в 17:00 (МСК)</p>
                   <p>Место: онлайн, <a href="https://www.google.ru/" target='_blank' rel="noreferrer"
-                      class="link">ссылка на встречу</a></p>
+                      class="color-main">ссылка
+                      на встречу</a>
+                  </p>
                 </div>
                 <div class="dg rg-6">
-                  <p class="descr-text">Вы можете проверить запись в личном кабинете</p>
+                  <p class="g-text-fs-14 g-text-darkgray">Вы можете проверить запись в личном кабинете</p>
                   <a href="/" class="main-btn small-btn">Личный кабинет</a>
                 </div>
                 <div class="dg rg-6">
-                  <p class="descr-text-gray">Если у вас есть вопросы, свяжитесь с нами</p>
-                  <ul class="section-footer__contacts-list">
-                    <li class="section-footer__contacts-item">
-                      <a href="tel:+79998888888" aria-label="контактный телефон" class="">
-                        <img src="images/icons/phone.svg" alt="контактный телефон">
+                  <p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+                  <ul class="common__contacts-list">
+                    <li class="common__contacts-item">
+                      <a href="tel:+79998888888" aria-label="контактный телефон">
+                        <i class="icon-phone"></i>
                         +7 (999) 888 88 88</a>
                     </li>
-                    <li class="section-footer__contacts-item">
+                    <li class="common__contacts-item">
                       <a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-                        <img src="images/icons/whatsapp.svg" alt="whatsapp">
+                        <i class="icon-whatsapp"></i>
                         WhatsApp</a>
                     </li>
-                    <li class="section-footer__contacts-item">
+                    <li class="common__contacts-item">
                       <a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-                        <img src="images/icons/telegram.svg" alt="telegram">
+                        <i class="icon-telegram"></i>
                         Telegram</a>
                     </li>
                   </ul>
                 </div>
               </div>
+            </div>
 
-              <div class="dg rg-8">
-                <div class="title-withIcon">
-                  <img src="images/icons/info.svg">
-                  <span>Рекомендации по подготовке</span>
-                </div>
-                <div class="dg rg-4">
-                  <h4 class="semibold-title">Заголовок 1</h4>
-                  <p class="descr-text">В частности, укрепление и развитие внутренней структуры является качественно
-                    новой ступенью
-                    кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных плановых заданий
-                    однозначно определяет</p>
-                </div>
-                <div class="dg rg-4">
-                  <h4 class="semibold-title">Заголовок 2</h4>
-                  <p class="descr-text">В частности, укрепление и развитие внутренней структуры является качественно
-                    новой ступенью
-                    кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных плановых заданий
-                    однозначно определяет</p>
-                </div>
+            <div class="dg rg-8">
+              <div class="common-title-withIcon">
+                <i class="icon-info"></i>
+                <span>Рекомендации по подготовке</span>
               </div>
-
+              <div class="dg rg-4">
+                <h4 class="g-text-semibold">Заголовок 1</h4>
+                <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
+                  качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
+                  плановых заданий
+                  однозначно определяет</p>
+              </div>
+              <div class="dg rg-4">
+                <h4 class="g-text-semibold">Заголовок 2</h4>
+                <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
+                  качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
+                  плановых заданий
+                  однозначно определяет</p>
+              </div>
             </div>
           </div>
-      </main>
-    </body>
+        </div>
   </div>
-  <script src="js/lib.min.js"></script>
-  <script src="js/main.min.js"></script>
+  </main>
+</body>
+</div>
+<script src="js/lib.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 
 </html>

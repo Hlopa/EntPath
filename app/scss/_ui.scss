@@ -1,0 +1,360 @@
+//=============================radio buttons============================//
+
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $gray;
+    background-color: #ffffff;
+}
+
+input[type="radio"]:checked + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 2px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $main;
+    background-color: $main;
+}
+
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="radio"]:checked + label:after{
+    left: 5px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+
+
+//==========================buttons =======================//
+
+.main-btn {
+    background-color: $main;
+    color: #fff;
+    font-family: 'raleway-semibold';
+    font-size: 16px;
+    line-height: 157%;
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    display: block;
+    text-align: center;
+  }
+  
+  .main-btn:hover, .main-btn:focus {
+    background-color: $main-hover;
+  }
+  
+  .main-btn:active {
+    background-color: $main-active;
+  }
+  
+  .secondary-btn {
+    background-color: #fff;
+    color: $main;
+    font-family: 'raleway-semibold';
+    font-size: 16px;
+    line-height: 150%;
+    border-radius: 12px;
+    border: 1px solid $main;
+    width: 100%;
+    padding: 9px 16px 11px 16px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+  
+  .secondary-btn .btn-icon-edit:before {
+   margin-right: 8px;
+    transition: 0.3s;
+  }
+  
+  .secondary-btn:hover, .secondary-btn:focus {
+    color: $main-hover;
+    border: 1px solid $main-hover;
+    .btn-icon-edit:before{
+      color: $main-hover
+    }
+  }
+  
+  .secondary-btn:active {
+    color: $main-active;
+    border: 1px solid $main-active;
+    .btn-icon-edit:before{
+      color: $main-active
+    }
+  }
+  
+  .small-btn {
+    padding: 10px 16px 11px;
+    width: unset;
+    font-family: 'raleway-medium';
+  }
+  
+  .btn-disabled {
+    background-color: $gray-light-2;
+    color: $gray;
+  }
+  
+  .back-link {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 13px;
+    margin-left: 5px;
+  
+    p {
+      color: $main;
+      margin-left: 14px;
+      font-family: 'raleway-semibold';
+    }
+  }
+  
+  .btn-link {
+    color: $main;
+    font-family: 'raleway-semibold';
+    text-align: center;
+    display: block;
+  }
+  
+  .btn-link-left {
+    color: $main;
+    font-family: 'raleway-semibold';
+    text-align: left;
+    display: block;
+  }
+
+
+
+
+  //changed autofill style in Chrom
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid transparent;
+  -webkit-text-fill-color: $gray-dark;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: 'raleway-medium';
+}
+
+::-webkit-datetime-edit-month-field { color: $gray-dark; }
+::-webkit-datetime-edit-day-field { color: $gray-dark; }
+::-webkit-datetime-edit-year-field { color: $gray-dark; }
+::-webkit-calendar-picker-indicator { display: none; }
+
+.input-group {
+  position: relative;
+  background-color: $gray-bg;
+  border-radius: 12px;
+}
+
+.input-group:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.input-label {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  color: $gray;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+
+.input-main {
+  z-index: 2;
+  border-radius: 12px;
+  background-color: transparent;
+  position: relative;
+  border: none;
+  width: 100%;
+  padding: 21px 34px 9px 16px;
+  font-size: 16px;
+  line-height: 150%;
+  color: $gray-dark;
+  border: 1px solid transparent;
+  font-family: 'roboto';
+}
+
+.input-main:focus {
+  border: 1px solid $main;
+  outline: none;
+  box-shadow: 0px 0px 15px rgba(27, 118, 255, 0.2);
+}
+
+.input-main:focus~.input-label,
+.input-main:not(:placeholder-shown)~.input-label {
+  top: 7px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+input:-webkit-autofill~.input-label{
+  color: $gray;
+  top: 7px;
+  font-size: 12px;
+  z-index: 10;
+}
+
+
+.input-clean {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 3;
+  cursor: pointer;
+  display: none;
+}
+
+.input-clean.active {
+  display: block;
+}
+
+.input-date{
+  padding-right: 16px;
+}
+
+.pass-eye {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  border: none;
+  background-color: transparent;
+}
+
+.pass-icon {
+  display: none;
+}
+
+.pass-icon.active {
+  display: block;
+}
+
+.input-success {
+  background-color: $green100;
+}
+
+.input-error-message {
+  display: none;
+  position: absolute;
+  bottom: -14px;
+  left: 10px;
+  font-size: 10px;
+  color: $gray;
+}
+
+.input-group-error {
+  background-color: $red100;
+
+  .input-error-message {
+    display: block;
+  }
+
+  .input-label {
+    color: $red900;
+  }
+
+  .input-main {
+    color: $red900;
+  }
+
+  .input-main:focus~.input-label,
+  .input-main:not(:placeholder-shown)~.input-label {
+    color: $gray;
+  }
+}
+
+
+
+//=========================selects=========================//
+
+select{
+  min-width: 166px;
+  border-color: $gray-light-2;
+  border-radius: 8px;
+  padding: 8px 24px 8px 29px;
+  font-size: 12px;
+  line-height: 117%;
+  cursor: pointer;
+  background-color: white;
+  display: inline-block;
+  margin: 0;      
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance:none;
+}
+
+select{
+  background-image: url(../images/icons/arrow-down.svg);
+  background-position: right 6px center;
+  background-repeat: no-repeat;
+  background-size:12px;
+}
+
+select:focus {
+  background-image: url(../images/icons/arrow-up.svg);
+  outline: none;
+  border-color: $main
+}
+
+.select{
+  position: relative;
+  img{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Track - Запись на консультацию</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons//apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons//apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons//apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons//apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons//apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons//apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon-180x180.png" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="/">
+        <img src="images/logo.svg" alt="Логотип платформы">
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="#">О траектории</a></li>
+          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
+          <li class="header-nav__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="header-nav__btn">
+          <button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
+          <div class="header-profile__menu">
+            <ul>
+              <li class="header-profile__menu-item">
+                <a href="/">
+                  <img src="images/icons/profile-small.svg"><span>Личный кабинет</span>
+                </a>
+
+              </li>
+              <li class="header-profile__menu-item header-profile__menu-item--danger">
+                <a href="/auth.html">
+                  <img src="images/icons/out.svg"><span>Выйти из личного кабинета</span>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <body>
+      <main>
+        <div class="g-page-container">
+          <form action="#">
+            <div class="choose-day dg rg-40">
+              <h1 class="main-title">Записаться на консультацию</h1>
+              <div class="dg rg-20">
+                <div class="common__pay-item">
+                  <span class="g-text-gray">Тариф</span>
+                  <span>Продвинутый</span>
+                </div>
+                <div class="common__pay-item">
+                  <span class="g-text-gray">К оплате</span>
+                  <span>10 899₽</span>
+                </div>
+                <div class="common__pay-item">
+                  <span class="g-text-gray">Дата</span>
+                  <div class="select">
+                    <img src="images/icons/calendar.svg">
+                    <select name="selectDay">
+                      <option selected value="12.11.22" aria-label="12.11.22">12.11.22</option>
+                      <option value="13.11.22" aria-label="13.11.22">13.11.22</option>
+                      <option value="22.11.22" aria-label="22.11.22">22.11.22</option>
+                      <option value="25.11.22" aria-label="25.11.22">25.11.22</option>
+                      <option value="05.12.22" aria-label="05.12.22">28.01.23</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="common__pay-item">
+                  <span class="g-text-gray">Время</span>
+                  <div class="select">
+                    <img src="images/icons/clock-small.svg">
+                    <select name="selectTime" aria-label="выбор времени">
+                      <option selected value="9:00-10:00" aria-label="9:00-10:00">9:00-10:00</option>
+                      <option value="10:00-11:00" aria-label="9:00-10:00">10:00-11:00</option>
+                      <option value="12:00-13:00" aria-label="9:00-10:00">12:00-13:00</option>
+                      <option value="13:00-14:00" aria-label="9:00-10:00">13:00-14:00</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button class="main-btn goToPay">Перейти к оплате</button>
+            </div>
+          </form>
+        </div>
+  </div>
+  </main>
+</body>
+</div>
+<script src="js/lib.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
