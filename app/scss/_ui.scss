@@ -320,9 +320,9 @@ input:-webkit-autofill~.input-label{
 
 //=========================selects=========================//
 
-select{
-  min-width: 166px;
-  border-color: $gray-light-2;
+select, .input-select{
+  width: 166px;
+  border: 1px solid $gray-light-2;
   border-radius: 8px;
   padding: 8px 24px 8px 29px;
   font-size: 12px;
@@ -343,11 +343,16 @@ select{
   background-size:12px;
 }
 
-select:focus {
+select:focus{
   background-image: url(../images/icons/arrow-up.svg);
+ 
+}
+
+.input-select:focus{
   outline: none;
   border-color: $main
 }
+
 
 .select{
   position: relative;
