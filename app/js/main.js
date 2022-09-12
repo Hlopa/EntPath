@@ -115,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     })
   }
+
 })
 
 
@@ -158,3 +159,11 @@ function togglePassword(event, inputId, showEyeId, hideEyeId, evt) {
         if (item !== checkbox) item.checked = false
     })
   }
+
+
+  //==========================Air Datepicker===============================//
+  const chooseDay = document.getElementById('choose-day-datepicker');
+  if(chooseDay){
+    const chooseDayPicker = new AirDatepicker(chooseDay, []);
+  }
+
