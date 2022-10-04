@@ -1,16 +1,16 @@
 .form-main {
-  width: 378px;
+  max-width: 378px;
   margin: 0px auto;
 }
 
 .form-container{
-   width: 335px;
-   margin: 0px auto;
+  width: 100%;
+  padding: 0px 24px;
 }
 
 .form-header{
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 
@@ -18,7 +18,7 @@
   text-align: center;
   p{
     color: $gray-dark;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
   }
 }
 
@@ -81,4 +81,19 @@ margin-bottom: 8px;
   color: $gray-dark;
   line-height: 143%;
   margin: 8px -24px 0px -24px;
+}
+
+@media (max-width: 600px) {
+.form-descr{
+  margin: 8px 0px 0;
+  font-size: 14px;
+}
+
+.form-header{
+  margin-bottom: 24px;
+}
+
+.form-container{
+  padding: 0
+}
 }

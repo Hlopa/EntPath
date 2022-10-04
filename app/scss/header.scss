@@ -1,4 +1,4 @@
-.header {
+.header__inner {
   padding: 28px 0px 24px;
   display: flex;
   justify-content: space-between;
@@ -13,10 +13,20 @@
 .header-nav__list {
   display: flex;
   margin: 0px -12px;
+  .header-nav__mobileTitle{
+    display: none;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'raleway-medium';
+    margin-bottom: 24px;
+  }
 }
 
 .header-nav__item {
   margin: 0px 12px;
+  i{
+    display: none;
+  }
 }
 
 .header-nav__btn {
@@ -69,4 +79,123 @@
 
 .header-profile__menu-item:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.header__burgerWithLogo {
+  display: flex;
+  align-items: center;
+
+  .header__burger {
+    margin-right: 16px;
+  }
+}
+
+.header__burger {
+  width: 24px;
+  height: 23px;
+  border: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__burger-span {
+  position: relative;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  top: 0px;
+  left: 0px;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+    left: 0;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  &::after {
+    top: -8px;
+  }
+
+  &::before {
+    top: 8px;
+  }
+}
+
+.header__burger--active {
+  .header__burger-span {
+    background: transparent;
+
+    &::before {
+      transform: rotate(45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      top: 0;
+      transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+  }
+}
+
+
+@media (max-width: 660px) {
+
+  .header{
+    border-bottom: 1px solid $gray-light-2;
+  }
+  .header__burger {
+    display: flex;
+  }
+
+  .header-nav__list {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 100px;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    background-color: #fff;
+
+    &--closed {
+      display: none;
+    }
+
+    .header-nav__mobileTitle{
+      display: block;
+    }
+  }
+
+  .header-nav__item {
+    a {
+      font-family: "raleway-medium";
+      background-color: $blue100;
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    i{
+      color: $blue900;
+    }
+
+    margin: 0px 0px 8px 0px;
+  }
+
+  .header-nav__btn{
+    margin-left: 10px;
+  }
 }

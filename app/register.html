@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Регистрация</title>
+  <title>EntPath - Регистрация</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
@@ -20,145 +20,161 @@
 </head>
 
 <body>
-  <div class="container">
-    <header class="header">
-      <a href="/">
-        <img src="images/logo.svg" alt="Логотип платформы">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-          <li class="header-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__burgerWithLogo">
+          <div class="header__burger">
+            <span class="header__burger-span"></span>
+          </div>
+          <a href="/">
+            <img src="images/logo.svg" alt="Логотип платформы">
+          </a>
         </div>
-      </nav>
-    </header>
 
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__mobileTitle">Меню</li>
+            <li class="header-nav__item"><a href="#">О траектории <i class="icon-arrow-right"></i>
+              </a></li>
+            <li class="header-nav__item"><a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a></li>
+            <li class="header-nav__item"><a href="#">Контакты <i class="icon-arrow-right"></i></a></li>
+          </ul>
+          <div class="header-nav__btn">
+            <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
     <body>
       <main class="g-page-container">
-          <div class="form-main">
-            <div class="form-header">
-              <h1 class="main-title">Регистрация</h1>
-            </div>
-
-            <form action="#" class="mb-42" id="register" autocomplete="off">
-              <div class="form-container">
-                <div class="mb-58">
-                  <div class="mb-32">
-                    <div class="form-subtitle">
-                      <h3 class="form-subtitle__title">Личные данные</h3>
-                    </div>
-                    <div class="input-group">
-                      <input class="input-main" placeholder=" " id="register-surname"
-                        oninput="return cleanInputIcon('register-surname', 'register-surname-clean')">
-                      <label class="input-label">Фамилия</label>
-                      <img src="images/icons/cross.svg" id="register-surname-clean" class="input-clean">
-                      <div class="input-error-message"></div>
-                    </div>
-                    <div class="input-group">
-                      <input class="input-main" placeholder=" " id="register-name"
-                        oninput="return cleanInputIcon('register-name', 'register-name-clean')">
-                      <label class="input-label">Имя</label>
-                      <img src="images/icons/cross.svg" id="register-name-clean" class="input-clean">
-                      <div class="input-error-message"></div>
-                    </div>
-                    <div class="input-group" id="date-mask-group">
-                      <input class="input-main input-date" placeholder=" " id="date-mask" type="text">
-                      <label class="input-label">Дата рождения</label>
-                      <div class="input-error-message"></div>
-                    </div>
-
-                    <div class="input-group input-group-error">
-                      <input class="input-main" placeholder=" " id="register-city"
-                        oninput="return cleanInputIcon('register-city', 'register-city-clean')">
-                      <label class="input-label">Страна, город проживания</label>
-                      <img src="images/icons/cross.svg" id="register-city-clean" class="input-clean">
-                      <div class="input-error-message">Пример поля с ошибкой</div>
-                    </div>
-
-                    <div class="input-group input-success">
-                      <input class="input-main" placeholder=" " id="register-job"
-                        oninput="return cleanInputIcon('register-job', 'register-job-clean')">
-                      <label class="input-label">Должность</label>
-                      <img src="images/icons/cross.svg" id="register-job-clean" class="input-clean">
-                      <div class="input-error-message"></div>
-                    </div>
+        <a class="back-link" href="/auth.html">
+          <i class="icon-arrow-left"></i>
+          <p>Назад</p>
+        </a>
+        <div class="form-main">
+          <div class="form-header">
+            <h1 class="main-title">Регистрация</h1>
+          </div>
+          <form action="#" class="mb-32" id="register" autocomplete="off">
+            <div class="form-container">
+              <div class="mb-58">
+                <div class="mb-32">
+                  <div class="form-subtitle">
+                    <h3 class="form-subtitle__title">Личные данные</h3>
+                  </div>
+                  <div class="input-group">
+                    <input class="input-main" placeholder=" " id="register-surname"
+                      oninput="return cleanInputIcon('register-surname', 'register-surname-clean')">
+                    <label class="input-label">Фамилия</label>
+                    <img src="images/icons/cross.svg" id="register-surname-clean" class="input-clean">
+                    <div class="input-error-message"></div>
+                  </div>
+                  <div class="input-group">
+                    <input class="input-main" placeholder=" " id="register-name"
+                      oninput="return cleanInputIcon('register-name', 'register-name-clean')">
+                    <label class="input-label">Имя</label>
+                    <img src="images/icons/cross.svg" id="register-name-clean" class="input-clean">
+                    <div class="input-error-message"></div>
+                  </div>
+                  <div class="input-group" id="date-mask-group">
+                    <input class="input-main input-date" placeholder=" " id="date-mask" type="text">
+                    <label class="input-label">Дата рождения</label>
+                    <div class="input-error-message"></div>
                   </div>
 
-                  <div class="mb-32">
-                    <div class="form-subtitle">
-                      <h3 class="form-subtitle__title">Связь</h3>
-                    </div>
-                    <div class="input-group">
-                      <input class="input-main" placeholder=" " id="register-email"
-                        oninput="return cleanInputIcon('register-email', 'register-email-clean')"  autocomplete="off">
-                      <label class="input-label">Электронная почта</label>
-                      <img src="images/icons/cross.svg" id="register-email-clean" class="input-clean">
-                      <div class="input-error-message"></div>
-                    </div>
-                    <div class="input-group" id="phone-mask-group">
-                      <input class="input-main" placeholder=" " id="phone-mask"  autocomplete="off">
-                      <label class="input-label">Номер телефона</label>
-                      <div class="input-error-message"></div>
-                    </div>
-                  </div>
-                  <div class="form-favourite-contact">
-                    <p class="form-text">Выберите предпочтительный способ связи</p>
-                    <div class="form-favourite-contact__list">
-                      <div class="form-checkbox">
-                        <input type="checkbox" id="phone-favourite" name="phone-favourite" checked onclick="onlyOne(this)">
-                        <label for="phone-favourite" class="unselectable form-checkbox-label">Телефон</label>
-                      </div>
-
-                      <div class="form-checkbox">
-                        <input type="checkbox" id="whatsapp-favourite" name="whatsapp-favourite" onclick="onlyOne(this)">
-                        <label for="whatsapp-favourite" class="unselectable form-checkbox-label">WhatsApp</label>
-                      </div>
-
-                      <div class="form-checkbox">
-                        <input type="checkbox" id="telegram-favourite" name="telegram-favourite" onclick="onlyOne(this)">
-                        <label for="telegram-favourite" class="unselectable form-checkbox-label">Telegram</label>
-                      </div>
-                    </div>
+                  <div class="input-group input-group-error">
+                    <input class="input-main" placeholder=" " id="register-city"
+                      oninput="return cleanInputIcon('register-city', 'register-city-clean')">
+                    <label class="input-label">Страна, город проживания</label>
+                    <img src="images/icons/cross.svg" id="register-city-clean" class="input-clean">
+                    <div class="input-error-message">Пример поля с ошибкой</div>
                   </div>
 
-                  <div>
-                    <div class="form-subtitle">
-                      <h3 class="form-subtitle__title">Безопасность</h3>
-                    </div>
-                    <div class="input-group">
-                      <input class="input-main" placeholder=" " id="password-1" type="password" autocomplete="off">
-                      <label class="input-label">Пароль</label>
-                      <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye', 'hide-eye')">
-                        <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye">
-                        <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye">
-                      </button>
-                      <div class="input-error-message"></div>
+                  <div class="input-group input-success">
+                    <input class="input-main" placeholder=" " id="register-job"
+                      oninput="return cleanInputIcon('register-job', 'register-job-clean')">
+                    <label class="input-label">Должность</label>
+                    <img src="images/icons/cross.svg" id="register-job-clean" class="input-clean">
+                    <div class="input-error-message"></div>
+                  </div>
+                </div>
+
+                <div class="mb-32">
+                  <div class="form-subtitle">
+                    <h3 class="form-subtitle__title">Связь</h3>
+                  </div>
+                  <div class="input-group">
+                    <input class="input-main" placeholder=" " id="register-email"
+                      oninput="return cleanInputIcon('register-email', 'register-email-clean')" autocomplete="off">
+                    <label class="input-label">Электронная почта</label>
+                    <img src="images/icons/cross.svg" id="register-email-clean" class="input-clean">
+                    <div class="input-error-message"></div>
+                  </div>
+                  <div class="input-group" id="phone-mask-group">
+                    <input class="input-main" placeholder=" " id="phone-mask" autocomplete="off">
+                    <label class="input-label">Номер телефона</label>
+                    <div class="input-error-message"></div>
+                  </div>
+                </div>
+                <div class="form-favourite-contact">
+                  <p class="form-text">Выберите предпочтительный способ связи</p>
+                  <div class="form-favourite-contact__list">
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="phone-favourite" name="phone-favourite" checked
+                        onclick="onlyOne(this)">
+                      <label for="phone-favourite" class="unselectable form-checkbox-label">Телефон</label>
                     </div>
 
-                    <div class="input-group">
-                      <input class="input-main" placeholder=" " id="password-2" type="password" autocomplete="off">
-                      <label class="input-label">Подтвердите пароль</label>
-                      <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-2')">
-                        <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-2">
-                        <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye-2">
-                      </button>
-                      <div class="input-error-message"></div>
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="whatsapp-favourite" name="whatsapp-favourite" onclick="onlyOne(this)">
+                      <label for="whatsapp-favourite" class="unselectable form-checkbox-label">WhatsApp</label>
+                    </div>
+
+                    <div class="form-checkbox">
+                      <input type="checkbox" id="telegram-favourite" name="telegram-favourite" onclick="onlyOne(this)">
+                      <label for="telegram-favourite" class="unselectable form-checkbox-label">Telegram</label>
                     </div>
                   </div>
                 </div>
 
-                <a href="/" class="main-btn">Зарегистрироваться</a>
+                <div>
+                  <div class="form-subtitle">
+                    <h3 class="form-subtitle__title">Безопасность</h3>
+                  </div>
+                  <div class="input-group">
+                    <input class="input-main" placeholder=" " id="password-1" type="password" autocomplete="off">
+                    <label class="input-label">Пароль</label>
+                    <button class="pass-eye" onclick="togglePassword(event, 'password-1', 'show-eye', 'hide-eye')">
+                      <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye">
+                      <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye">
+                    </button>
+                    <div class="input-error-message"></div>
+                  </div>
+
+                  <div class="input-group">
+                    <input class="input-main" placeholder=" " id="password-2" type="password" autocomplete="off">
+                    <label class="input-label">Подтвердите пароль</label>
+                    <button class="pass-eye" onclick="togglePassword(event, 'password-2', 'show-eye-2', 'hide-eye-2')">
+                      <img src="images/icons/passShow.svg" class="pass-icon active" id="show-eye-2">
+                      <img src="images/icons/passHide.svg" class="pass-icon" id="hide-eye-2">
+                    </button>
+                    <div class="input-error-message"></div>
+                  </div>
+                </div>
               </div>
-            </form>
-            <div class="form-footer">
-              <p>Уже есть личный кабинет?</p>
-              <a href="/auth.html" class="btn-link">Войти</a>
+
+              <a href="/" class="main-btn">Зарегистрироваться</a>
             </div>
+          </form>
+          <div class="form-footer">
+            <p>Уже есть личный кабинет?</p>
+            <a href="/auth.html" class="btn-link">Войти</a>
           </div>
+        </div>
       </main>
     </body>
   </div>

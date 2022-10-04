@@ -16,7 +16,7 @@
     content: '';
     width: 80%;
     height: 1px;
-    background-color: $main;
+    background-color: $blue900;
     position: absolute;
     top: 50%;
     left: 30px;
@@ -67,7 +67,7 @@
 
 .appointment__tab.active {
   .appointment__tab-inner {
-    background-color: $main-hover;
+    background-color: $blue800;
 
     span {
       color: #fff;
@@ -75,14 +75,14 @@
 
     div {
       background-color: #fff;
-      color: $main;
+      color: $blue900;
     }
   }
 }
 
 .appointment__tab.success {
   .appointment__tab-inner {
-    background-color: $main-active;
+    background-color: $blue500;
 
     span {
       color: #fff;
@@ -90,7 +90,7 @@
 
     div {
       background-color: #fff;
-      color: $main;
+      color: $blue900;
       font-size: 0px;
 
       i::before {
@@ -132,11 +132,11 @@
     background-color: $gray-bg;
 
     .appointment__traektolog-arrow::before {
-      color: $main
+      color: $blue900
     }
 
     .appointment__traektolog-name {
-      color: $main
+      color: $blue900
     }
   }
 }

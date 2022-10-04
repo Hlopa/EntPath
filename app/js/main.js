@@ -2,7 +2,18 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  //=============Открытие и  закрытие меню в зедере====================//
+
+  //Открытие/закрытие бургер меню
+
+  $(function () {
+    $('.header__burger').on('click', function () {
+      $('.header-nav__list').slideToggle();
+      $('.header__burger').toggleClass("header__burger--active");
+    });
+  
+  });
+
+  //=============Открытие и  закрытие меню в xедере====================//
 
   const headerProfileBtn = document.querySelector('.header-profile__btn');
 

@@ -82,6 +82,11 @@ i{
 }
 
 .g-page-container {
+  padding-top: 26px;
+  padding-bottom: 50px;
+}
+
+.g-big-page-container{
   padding-top: 60px;
   padding-bottom: 50px;
 }
@@ -129,7 +134,7 @@ i{
 }
 
 .color-main{
-  color: $main;
+  color: $blue900;
 }
 
 .unselectable{
@@ -223,4 +228,42 @@ i{
 
 .mb-2 {
   margin-bottom: 2px;
+}
+
+
+
+//==========================Tablet========================//
+
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 0px 24px;
+  }
+}
+
+
+
+
+//==========================Mobile========================//
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0px 16px;
+  }
+
+  .g-page-container {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  .g-big-page-container{
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .g-main-title{
+    font-size: 24px;
+    line-height: 133%;
+  }
 }
