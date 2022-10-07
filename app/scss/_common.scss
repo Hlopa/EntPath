@@ -49,6 +49,7 @@
     line-height: 157%;
     i{
       margin-right: 5px;
+      padding-top: 1px;
     }
   }
 }
@@ -75,14 +76,63 @@
 //=============================traektolog info ===========================//
 
 .common-traektolog__info{
-  display: flex;
-  align-items: center;
+  .info {
+    display: flex;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid $gray-light-2;
+  }
+
+  .img {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-right: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .name {
+    font-size: 24px;
+    font-family: 'raleway-medium';
+    line-height: 133%;
+    margin-bottom: 4px;
+
+  }
+
+
+  .numbers {
+    display: flex;
+  }
+
+  .numbers-item {
+    span {
+      font-size: 32px;
+      font-family: 'raleway-bold';
+      color: $blue800;
+    }
+
+    p {
+      color: $gray-dark;
+      font-size: 12px;
+      font-family: 'raleway-medium';
+    }
+  }
+
+  .numbers-item:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 .common-traektolog__info-img{
   width: 108px;
   height: 108px;
-  border-radius: 24px;
+  border-radius: 16px;
   margin-right: 16px;
   @include image
 }
@@ -94,4 +144,99 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.common__traektolog-nastavnik{
+  border-radius: 50px;
+  background-color: $blue300;
+  color: $blue900;
+  font-size: 12px;
+  font-family: 'raleway-semibold';
+  width: fit-content;
+  padding: 2px 6px 3px 6px;
+}
+
+.common__traektolog-founder{
+  border-radius: 50px;
+  background-color: $blue900;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'raleway-semibold';
+  width: fit-content;
+  padding: 2px 6px 3px 6px;
+}
+
+
+//==========================Mobile========================//
+
+
+@media (max-width: 600px) {
+  .common-traektolog__info{
+    .img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .traektolog-role {
+      margin: 0px auto 16px auto;
+    }
+
+    .numbers {
+      border-radius: 16px;
+      background-color: $blue100;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 100%;
+
+    }
+
+    .traektolog-info {
+      width: 100%;
+    }
+
+    .numbers-item {
+      flex-basis: 50%;
+      text-align: center;
+      padding-left: 16px;
+      padding-right: 16px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+
+    .numbers-item:not(:last-child) {
+      margin-right: 0px;
+      border-right: 1px solid $blue500;
+    }
+  }
+
+  .common-traektolog__info-img{
+    margin-left: 0px;
+    margin-bottom: 12px;
+  }
+
+  .common__contacts-list{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .common__contacts-item:not(:last-child){
+      margin-right: 0px;
+      margin-bottom: 12px;
+  }
 }

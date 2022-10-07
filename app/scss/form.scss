@@ -25,7 +25,7 @@
 .form-subtitle{
 text-align: center;
 position: relative;
-margin-bottom: 8px;
+margin-bottom: 10px;
 &::after{
   content: '';
   width: 100%;
@@ -44,6 +44,7 @@ margin-bottom: 8px;
   background-color: #fff;
   padding-left: 16px;
   padding-right: 16px;
+  font-size: 14px;
 }
 
 .form-text{
@@ -67,7 +68,7 @@ margin-bottom: 8px;
 }
 
 .form-checkbox-label{
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 6px;
 }
 

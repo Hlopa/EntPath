@@ -1,9 +1,8 @@
-
-
-.fariffs-page{
-  width: 600px;
+.fariffs-page {
+  max-width: 550px;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   column-gap: 20px;
+  row-gap: 20px;
 }

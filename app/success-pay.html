@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Запить к траектологу</title>
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntPath - Успешная оплата</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
@@ -20,134 +20,216 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="content">
     <header class="header">
-      <a href="/">
-        <img src="images/logo.svg" alt="Логотип платформы">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-          <li class="header-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="header-nav__btn">
-          <button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
-          <div class="header-profile__menu">
-            <ul>
-              <li class="header-profile__menu-item">
-                <a href="/">
-                  <i class="icon-user icon-user-header-menu"></i>
-                  <span>Личный кабинет</span>
-                </a>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__burgerWithLogo">
+            <div class="header__burger">
+              <span class="header__burger-span"></span>
+            </div>
+            <a href="/">
+              <img src="images/logo.svg" alt="Логотип платформы" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-mobileTitle">Меню</li>
+              <li class="header__nav-item">
+                <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
               </li>
-              <li class="header-profile__menu-item header-profile__menu-item--danger">
-                <a href="/auth.html">
-                  <i class="icon-out"></i>
-                  <span>Выйти из личного кабинета</span>
-                </a>
+              <li class="header__nav-item">
+                <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Контакты <i class="icon-arrow-right"></i></a>
               </li>
             </ul>
-          </div>
+            <div class="header__nav-btn">
+              <button class="secondary-btn small-btn header-profile__btn">
+                Алексей <i class="icon-arrow-down" style="font-size: 10px"></i>
+              </button>
+              <div class="header-profile__menu">
+                <ul>
+                  <li class="header-profile__menu-item header-profile__menu-item--danger">
+                    <a href="/auth.html"> <img src="images/icons/out.svg" /><span>Выйти</span> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <body>
-      <main class="success-pay">
-        <div class="g-block success-pay__container">
-          <h1 class="g-text-fs-32 mb-16">Оплата прошла успешно!</h1>
-          <div class="dg rg-32">
-
-            <div>
-              <div class="common-title-withIcon mb-16">
-                <i class="icon-user"></i>
-                <span>Ваш траектолог</span>
-              </div>
-              <div class="common-traektolog__info">
-                <div class="common-traektolog__info-img">
-                  <img src="images/mockImg/traektolog3.png" alt="фото траектолога">
+    <div class="container">
+      <main class="g-page-container">
+        <a class="back-link" href="/">
+          <i class="icon-arrow-left"></i>
+          <p>В профиль</p>
+        </a>
+          <div class="g-block success-pay__container">
+            <span class="success-pay__traektolog-type display-desc">Тариф: Траектолог-наставник</span>
+            <h1 class="success-pay__title">Оплата прошла успешно!</h1>
+            <span class="success-pay__traektolog-type display-mobile mb-16">Тариф: Траектолог-наставник</span>
+            <div class="dg rg-32">
+              <div>
+                <div class="common-title-withIcon mb-16">
+                  <i class="icon-profile"></i>
+                  <span>Ваш траектолог</span>
                 </div>
-                <div>
-                  <p class="g-text-semibold mb-2">
-                    Анастасия Мельничук
+
+                <div class="common-traektolog__info">
+                  <div class="info">
+                    <div class="img">
+                      <img src="images/mockImg/traektolog.png" alt="Анастасия Мельничук" />
+                    </div>
+                    <div class="traektolog-info">
+                      <p class="name">Анастасия Мельничук</p>
+                      <p class="common__traektolog-nastavnik traektolog-role mb-12">Траектолог-наставник</p>
+                      <div class="numbers">
+                        <div class="numbers-item">
+                          <span>145</span>
+                          <p>построенных траекторий</p>
+                        </div>
+                        <div class="numbers-item">
+                          <span>4</span>
+                          <p>года успешной работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="g-med-text mb-24">
+                    Но многие известные личности освещают чрезвычайно интересные особенности картины в целом,
+                    однако конкретные выводы, разумеется, в равной степени предоставлены сами себе.
+                    Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности не
+                    даёт нам иного выбора, кроме определения новых принципов формирования
+                    материально-технической и кадровой базы. Каждый из нас понимает очевидную вещь: внедрение
+                    современных методик говорит о возможностях прогресса профессионального сообщества.
                   </p>
-                  <p class="common-traektolog__info-descr">Ясность нашей позиции очевидна: граница обучения кадров
-                    выявляет срочную
-                    потребность системы обучения кадров, соответствующей насущным потребностям. А также акционеры
-                    крупнейших компаний.</p>
+              </div>
+  
+              <div>
+                <div class="common-title-withIcon mb-8">
+                  <i class="icon-calendar"></i>
+                  <span>Дата и место встречи</span>
+                </div>
+                <div class="dg rg-12">
+                  <div class="dg rg-8">
+                    <p class="g-text-med">Понедельник, 24 августа, в 17:00 (МСК)</p>
+                    <p class="g-text-med">Место: онлайн, <a href="https://www.google.ru/" target='_blank' rel="noreferrer"
+                        class="color-main">ссылка
+                        на встречу</a>
+                    </p>
+                    <button class="btn-text">Добавить в календарь</button>
+                  </div>
+                  <div class="dg rg-6">
+                    <p class="g-text-fs-14 g-text-darkgray">Вы можете проверить запись в личном кабинете</p>
+                    <a href="/" class="main-btn small-btn">Личный кабинет</a>
+                  </div>
+                  <div class="dg rg-6 mb-32">
+                    <p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+                    <ul class="common__contacts-list">
+                      <li class="common__contacts-item">
+                        <a href="tel:+79998888888" aria-label="контактный телефон">
+                          <i class="icon-phone"></i>
+                          +7 (999) 888 88 88</a>
+                      </li>
+                      <li class="common__contacts-item">
+                        <a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
+                          <i class="icon-whatsapp"></i>
+                          WhatsApp</a>
+                      </li>
+                      <li class="common__contacts-item">
+                        <a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
+                          <i class="icon-telegram"></i>
+                          Telegram</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div>
-              <div class="common-title-withIcon mb-8">
-                <i class="icon-calendar"></i>
-                <span>Дата и место встречи</span>
-              </div>
-              <div class="dg rg-12">
-                <div class="dg rg-6">
-                  <p>Понедельник, 24 августа, в 17:00 (МСК)</p>
-                  <p>Место: онлайн, <a href="https://www.google.ru/" target='_blank' rel="noreferrer"
-                      class="color-main">ссылка
-                      на встречу</a>
-                  </p>
+  
+              <div class="dg rg-8">
+                <div class="common-title-withIcon">
+                  <i class="icon-info"></i>
+                  <span>Рекомендации по подготовке</span>
                 </div>
-                <div class="dg rg-6">
-                  <p class="g-text-fs-14 g-text-darkgray">Вы можете проверить запись в личном кабинете</p>
-                  <a href="/" class="main-btn small-btn">Личный кабинет</a>
+                <div class="dg rg-4">
+                  <h4 class="g-text-semibold">Заголовок 1</h4>
+                  <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
+                    качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
+                    плановых заданий
+                    однозначно определяет</p>
                 </div>
-                <div class="dg rg-6">
-                  <p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-                  <ul class="common__contacts-list">
-                    <li class="common__contacts-item">
-                      <a href="tel:+79998888888" aria-label="контактный телефон">
-                        <i class="icon-phone"></i>
-                        +7 (999) 888 88 88</a>
-                    </li>
-                    <li class="common__contacts-item">
-                      <a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-                        <i class="icon-whatsapp"></i>
-                        WhatsApp</a>
-                    </li>
-                    <li class="common__contacts-item">
-                      <a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-                        <i class="icon-telegram"></i>
-                        Telegram</a>
-                    </li>
-                  </ul>
+                <div class="dg rg-4">
+                  <h4 class="g-text-semibold">Заголовок 2</h4>
+                  <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
+                    качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
+                    плановых заданий
+                    однозначно определяет</p>
                 </div>
-              </div>
-            </div>
-
-            <div class="dg rg-8">
-              <div class="common-title-withIcon">
-                <i class="icon-info"></i>
-                <span>Рекомендации по подготовке</span>
-              </div>
-              <div class="dg rg-4">
-                <h4 class="g-text-semibold">Заголовок 1</h4>
-                <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
-                  качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
-                  плановых заданий
-                  однозначно определяет</p>
-              </div>
-              <div class="dg rg-4">
-                <h4 class="g-text-semibold">Заголовок 2</h4>
-                <p class="g-text-darkgray g-text-fs-14">В частности, укрепление и развитие внутренней структуры является
-                  качественно новой ступенью кластеризации усилий. Ясность нашей позиции очевидна: реализация намеченных
-                  плановых заданий
-                  однозначно определяет</p>
               </div>
             </div>
           </div>
-        </div>
+      </main>
+      </div>
   </div>
-  </main>
-</body>
-</div>
-<script src="js/lib.min.js"></script>
-<script src="js/main.min.js"></script>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__company">
+          <a class="footer__company-logo" href="/">
+            <img src="images/logo.svg" alt="Логотип платформы" />
+          </a>
+          <div class="footer__company-share">
+            <span>Поделиться:</span>
+            <div class="footer__company-share-list">
+              <a href="#">
+                <i class="icon-telegram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i class="icon-vk"></i>
+              </a>
+            </div>
+          </div>
+          <a href="/confidention.html" class="g-text-gray g-text-fs-12 g-text-med">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts dg rg-12">
+          <div class="footer__contacts-social">
+            <a href="#">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+          <a href="tel:+79266028511" class="g-text-med">+7 926 602 85 11</a>
+          <a href="mailto:pp@entspace.com" class="g-text-med g-text-blue900">pp@entspace.com</a>
+          <p class="g-text-gray g-text-med g-text-fs-12">© ИП Комаров А. А. 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/lib.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

@@ -92,19 +92,37 @@ input[type="radio"]:checked + label:after{
   }
   
   .secondary-btn {
-    background-color: #fff;
+    background-color: $blue100;
     color: $blue900;
     font-family: 'raleway-semibold';
     font-size: 16px;
     line-height: 150%;
-    border-radius: 12px;
-    border: 1px solid $blue900;
+    border-radius: 100px;
+    border: none;
     width: 100%;
-    padding: 9px 16px 11px 16px ;
+    padding: 14px 16px 18px 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
+    .icon-arrow-down{
+      padding-top: 3px;
+      padding-left: 6px;
+    }
+    .btn-icon-edit{
+      font-size: 18px;
+      padding-top: 2px;
+    }
+  }
+
+  .secondary-btn:focus {
+    .icon-arrow-down{
+      transform: rotate(-180deg);
+      padding-bottom: 1px;
+      padding-right: 6px;
+      padding-left: 0px;
+      padding-top: 0px;
+    }
   }
   
   .secondary-btn .btn-icon-edit:before {
@@ -113,19 +131,13 @@ input[type="radio"]:checked + label:after{
   }
   
   .secondary-btn:hover, .secondary-btn:focus {
-    color: $blue800;
-    border: 1px solid $blue800;
-    .btn-icon-edit:before{
-      color: $blue800;
-    }
+    background-color: $blue300;
+    border: none;
   }
   
   .secondary-btn:active {
-    color: $blue500;
-    border: 1px solid $blue500;
-    .btn-icon-edit:before{
-      color: $blue500;
-    }
+    border: none;
+    background-color: $blue500;
   }
   
   .small-btn {
@@ -133,7 +145,13 @@ input[type="radio"]:checked + label:after{
     width: unset;
     font-size: 14px;
   }
-  
+
+  .medium-btn{
+    padding: 9px 16px 12px;
+    width: unset;
+  }
+
+
   .btn-disabled {
     background-color: $gray-light-2;
     color: $gray;
@@ -141,7 +159,7 @@ input[type="radio"]:checked + label:after{
   
   .back-link {
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: 32px;
     align-items: center;
   
     p {
@@ -153,6 +171,19 @@ input[type="radio"]:checked + label:after{
     i{
       color: $blue900;
     }
+  }
+
+  .btn-text{
+    border: none;
+    background-color: unset;
+    width: fit-content;
+    color: $blue900;
+    font-family: 'raleway-semibold';
+    cursor: pointer;
+  }
+
+  .btn-text--small{
+    font-size: 14px;
   }
   
   .btn-link {
@@ -189,6 +220,10 @@ select:-webkit-autofill:focus {
   font-family: 'raleway-medium';
 }
 
+textarea{
+  resize: none;
+}
+
 ::-webkit-datetime-edit-month-field { color: $gray-dark; }
 ::-webkit-datetime-edit-day-field { color: $gray-dark; }
 ::-webkit-datetime-edit-year-field { color: $gray-dark; }
@@ -198,11 +233,28 @@ select:-webkit-autofill:focus {
   position: relative;
   background-color: $gray-bg;
   border-radius: 12px;
+
+  .input-multiline{
+    border: 1px solid transparent;
+  }
 }
 
 .input-group:not(:last-child) {
   margin-bottom: 24px;
 }
+
+.input-group-search:not(:last-child), .input-group-white:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.input-group-white{
+   background-color: #fff;
+
+   .input-multiline{
+    border: 1px solid $gray-light-2
+  }
+}
+
 
 .input-label {
   position: absolute;
@@ -246,6 +298,22 @@ input:-webkit-autofill~.input-label{
   top: 7px;
   font-size: 12px;
   z-index: 10;
+}
+
+.input-search{
+  padding: 15px 34px 15px 46px;
+  background-image: url(../images/icons/search.svg);
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+}
+
+.input-search::placeholder, .input-multiline::placeholder{
+  color: $gray;
+}
+
+
+.input-multiline{
+  padding: 15px 16px 15px 16px;
 }
 
 
@@ -327,7 +395,7 @@ select, .input-select{
   width: 166px;
   border: 1px solid $gray-light-2;
   border-radius: 8px;
-  padding: 8px 24px 8px 29px;
+  padding: 7.5px 24px 8.5px 29px;
   font-size: 12px;
   line-height: 117%;
   cursor: pointer;
@@ -341,14 +409,25 @@ select, .input-select{
 
 select{
   background-image: url(../images/icons/arrow-down.svg);
-  background-position: right 6px center;
+  background-position: right 10px center;
   background-repeat: no-repeat;
-  background-size:12px;
+  background-size:10px
 }
 
 select:focus{
   background-image: url(../images/icons/arrow-up.svg);
  
+}
+
+select:required:invalid {
+  color: gray;
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
 }
 
 .input-select:focus{
@@ -359,11 +438,13 @@ select:focus{
 
 .select{
   position: relative;
-  img{
+  i{
     position: absolute;
     left: 18px;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 14px;
+    padding-top: 0.5px;
   }
 }
 
@@ -372,6 +453,7 @@ select:focus{
 
 @media (max-width: 600px) {
 .back-link {
+  margin-bottom: 24px;
   p {
     font-size: 14px;
     padding-bottom: 4px;

@@ -41,6 +41,7 @@ function stylelib() {
         "node_modules/slick-carousel/slick/slick.css",
         "node_modules/animate.css/animate.css",
         "app/libs/air-datepicker-custom.css",
+        "app/libs/star-rating-svg.css",
     ])
         .pipe(concat("libs.min.css"))
         .pipe(cssmin())
@@ -64,7 +65,8 @@ function jslib() {
         'node_modules/jquery/dist/jquery.js',
         "node_modules/slick-carousel/slick/slick.js",
         "node_modules/imask/dist/imask.js",
-        "node_modules/air-datepicker/air-datepicker.js"
+        "node_modules/air-datepicker/air-datepicker.js",
+        "app/libs/jquery.star-rating-svg.js",
     ])
         .pipe(concat('lib.min.js'))
         .pipe(uglify())

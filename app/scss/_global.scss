@@ -14,6 +14,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   color: $black;
+  overflow-x: hidden;
+  position: relative;
 }
 
 *,
@@ -70,6 +72,13 @@ i{
   }
 }
 
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
 
 //======================= containers, blocks ============================//
 
@@ -83,12 +92,12 @@ i{
 
 .g-page-container {
   padding-top: 26px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .g-big-page-container{
   padding-top: 60px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .container {
@@ -99,11 +108,12 @@ i{
 }
 
 
+
 //==========================typography==================================//
 
 .g-main-title {
   font-size: 32px;
-  line-height: 125%;
+  line-height: 115%;
   text-align: center;
 }
 
@@ -115,10 +125,19 @@ i{
   color: $gray-dark;
 }
 
+.g-text-blue900{
+  color: $blue900;
+}
+
+
 .g-text-semibold{
   font-family: 'raleway-semibold';
-  line-height: 150%;
 }
+
+.g-text-med{
+  font-family: 'raleway-medium';
+}
+
 
 .g-text-fs-12{
   font-size: 12px;
@@ -131,6 +150,20 @@ i{
 
 .g-text-fs-32{
   font-size: 32px;
+}
+
+.g-med-text{
+  color: $gray-dark;
+  font-size: 14px;
+  font-family: 'raleway-medium';
+  line-height: 143%;
+}
+
+.g-med-text-small{
+  color: $gray-dark;
+  font-size: 12px;
+  font-family: 'raleway-medium';
+  line-height: 143%;
 }
 
 .color-main{
@@ -151,8 +184,28 @@ i{
 
 //=====================grid systems=================//
 
+.df{
+  display: flex;
+}
+
+.fl-d-c{
+  flex-direction: column;
+}
+
+.fl-ai-c{
+  align-items: center;
+}
+
+.fl-jc-sb{
+  justify-content: space-between;
+}
+
 .dg{
   display: grid;
+}
+
+.rg-4{
+  row-gap: 4px;
 }
 
 .rg-6{
@@ -231,6 +284,10 @@ i{
 }
 
 
+.display-mobile{
+  display: none !important;
+}
+
 
 //==========================Tablet========================//
 
@@ -254,16 +311,33 @@ i{
 
   .g-page-container {
     padding-top: 16px;
-    padding-bottom: 24px;
+    padding-bottom: 50px;
   }
 
   .g-big-page-container{
     padding-top: 48px;
-    padding-bottom: 24px;
+    padding-bottom: 50px;
   }
 
   .g-main-title{
     font-size: 24px;
     line-height: 133%;
   }
+
+  .rg-40{
+    row-gap: 32px;
+  }
+
+  .g-block{
+    padding: 16px;
+  }
+
+  .display-desc{
+    display: none;
+  }
+
+  .display-mobile{
+    display: block !important;
+  }
+  
 }

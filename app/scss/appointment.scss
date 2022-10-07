@@ -1,13 +1,14 @@
 .appointment {
-  width: 552px;
-  margin: 50px auto;
+  max-width: 552px;
+  margin: 0px auto;
   overflow: hidden;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .appointment__tabs {
-  padding-left: 26px;
-  padding-right: 26px;
+  width: 451px;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -24,9 +25,11 @@
   }
 }
 
+.appointment__tabs--founder{
+  width: 100%;
+}
+
 .appointment__tab {
-  padding-left: 4px;
-  padding-right: 4px;
   background-color: #fff;
   cursor: default;
 }
@@ -34,9 +37,9 @@
 .appointment__tab-inner {
   display: flex;
   align-items: center;
-  padding: 6px 16px;
+  padding: 6px 16px 6px 8px;
   background-color: $gray-bg;
-  border-radius: 8px;
+  border-radius: 100px;
 
   span {
     color: $gray;
@@ -46,7 +49,7 @@
   }
 
   div {
-    background-color: $gray;
+    background-color: $gray-light;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -122,7 +125,7 @@
 
 .appointment__traektolog-item {
   cursor: pointer;
-  padding: 15px 21px 15px 16px;
+  padding: 16px;
   border-radius: 12px;
   transition: 0.3s;
   display: flex;
@@ -138,19 +141,25 @@
     .appointment__traektolog-name {
       color: $blue900
     }
+    .appointment__traektolog-numbers-item{
+      background-color: #fff;
+    }
   }
+}
+
+.appointment__traektolog-item-info {
+  display: flex;
 }
 
 .appointment__traektolog-img {
   width: 65px;
   height: 65px;
-  border-radius: 12px;
+  border-radius: 100px;
   @include image;
 }
 
 .appointment__traektolog-info {
   padding-left: 8px;
-  padding-right: 15px;
   flex-grow: 1;
 }
 
@@ -159,6 +168,17 @@
   margin-bottom: 2px;
   line-height: 150%;
   transition: 0.3s;
+}
+
+.appointment__traektolog-type {
+  border: 1px solid $gray-light;
+  width: fit-content;
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 117%;
+  padding: 1px 6px 3px;
+  color: $gray;
+  font-family: 'raleway-medium';
 }
 
 .appointment__traektolog-descr {
@@ -171,7 +191,37 @@
   overflow: hidden;
 }
 
+.appointment__traektolog-numbers{
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointment__traektolog-numbers-item{
+  flex-basis: 49%;
+  background-color: $blue100;
+  padding: 8px 16px 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+
+  span{
+    font-size: 24px;
+    color: $blue900;
+    font-family: 'raleway-bold';
+    margin-right: 6px;
+  }
+
+  p{
+    font-size: 12px;
+    line-height: 117%;
+    color: $gray-dark;
+  }
+}
+
+
 //================================== шаг 2 =====================//
+
 
 .appointment__selected-traektolog {
   position: absolute;
@@ -184,3 +234,85 @@
   transform: translateX(0px);
 }
 
+
+.appointment__table {
+  border: 1px solid $gray-light-2;
+  border-radius: 16px;
+
+  .table__header {
+    padding: 10px 16px 12px 14px;
+    border-bottom: 1px solid $gray-light-2;
+    display: flex;
+
+    .table__header-item {
+      span {
+        font-size: 12px;
+        line-height: 117%;
+        font-family: 'raleway-bold';
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .table__column--left {
+    flex-basis: 60%;
+  }
+
+  .table__column--right {
+    flex-basis: 40%;
+  }
+
+
+  .table__body {
+    display: flex;
+    padding: 0px 16px 16px 16px;
+    height: 267px;
+    overflow-y: scroll;
+  }
+
+  .table__body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+
+  .table__body::-webkit-scrollbar-thumb {
+    background-color: $blue700;
+    border-radius: 20px;
+  }
+
+
+  .table__item {
+    padding: 12px 17px 12px 4px;
+  }
+}
+
+
+
+//==========================Mobile========================//
+
+
+@media (max-width: 600px) {
+  .appointment__traektolog-item {
+    padding: 12px 8px 12px 8px;
+  }
+
+  .appointment__table {
+    .table__header {
+      padding: 10px 10px 12px 10px;
+    }
+
+    .table__column--left {
+      flex-basis: 50%;
+    }
+
+    .table__column--right {
+      flex-basis: 50%;
+    }
+
+    .table__body{
+      padding: 0 10px 16px;
+    }
+
+  }
+
+}
