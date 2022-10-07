@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntPath - Запись на консультацию с траектологом</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons//apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons//apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons//apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons//apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons//apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons//apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons//apple-touch-icon-180x180.png" />
+</head>
+
+<body>
+  <div class="content">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__burgerWithLogo">
+            <div class="header__burger">
+              <span class="header__burger-span"></span>
+            </div>
+            <a href="/">
+              <img src="images/logo.svg" alt="Логотип платформы" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-mobileTitle">Меню</li>
+              <li class="header__nav-item">
+                <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+              </li>
+            </ul>
+            <div class="header__nav-btn">
+              <button class="secondary-btn small-btn header-profile__btn">
+                Алексей <i class="icon-arrow-down" style="font-size: 10px"></i>
+              </button>
+              <div class="header-profile__menu">
+                <ul>
+                  <li class="header-profile__menu-item header-profile__menu-item--danger">
+                    <a href="/auth.html"> <img src="images/icons/out.svg" /><span>Выйти</span> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main class="g-page-container ">
+        <a class="back-link" href="/tariffs.html">
+          <i class="icon-arrow-left"></i>
+          <p>Назад</p>
+        </a>
+        <div class="appointment">
+          <h1 class="g-main-title mb-24">Записаться на консультацию с траектологом</h1>
+
+          <!-------------------------------- tabs --------------------------------------------->
+          <div class="mb-24">
+          <div class="appointment__tabs">
+            <div class="appointment__tab active" id="appointment__firstStep">
+              <div class="appointment__tab-inner">
+                <div class="unselectable">
+                  <i class="icon-success"></i>
+                  1
+                </div>
+                <span class="unselectable">Выбор траектолога</span>
+              </div>
+            </div>
+            <div class="appointment__tab" id="appointment__secondStep">
+              <div class="appointment__tab-inner">
+                <div class="unselectable">
+                  <i class="icon-success"></i>
+                  2
+                </div>
+                <span class="unselectable">Выбор даты</span>
+              </div>
+            </div>
+            <div class="appointment__tab" id="appointment__thirdStep">
+              <div class="appointment__tab-inner">
+                <div class="unselectable">
+                  <i class="icon-success"></i>
+                  3
+                </div>
+                <span class="unselectable">Оплата</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-------------------------------- шаги записи к траектологу --------------------------------------------->
+          <div class="appointment__steps">
+
+            <!-------------------------------- step 1 --------------------------------------------->
+            <div class="appointment__traektologies">
+              <div class="input-group input-group-search mb-16">
+                <input class="input-main input-search" placeholder="Поиск траектолога..." id="traektolog-search"
+                  oninput="return cleanInputIcon('traektolog-search', 'traektolog-search-clean')">
+                <img src="images/icons/cross.svg" id="traektolog-search-clean" class="input-clean">
+                <div class="input-error-message"></div>
+              </div>
+              <ul class="appointment__traektologies">
+                <li class="appointment__traektolog-item">
+                  <div class="appointment__traektolog-item-info">
+                    <div class="appointment__traektolog-img">
+                      <img src="images/mockImg/traektolog.png" alt="фото траектолога">
+                    </div>
+                    <div class="appointment__traektolog-info dg rg-4">
+                      <p class="appointment__traektolog-name">Елена Петрова</p>
+                      <p class="appointment__traektolog-type">Траектолог</p>
+                      <p class="appointment__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                        выявляет срочную
+                        потребность системы обучения кадров и еще тест</p>
+                        <div class="appointment__traektolog-numbers">
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>145</span>
+                            <p>построенных траекторий</p>
+                          </div>
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>4</span>
+                            <p>года <br/> успешной работы</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appointment__traektolog-item">
+                  <div class="appointment__traektolog-item-info">
+                    <div class="appointment__traektolog-img">
+                      <img src="images/mockImg/traektolog2.png" alt="фото траектолога">
+                    </div>
+                    <div class="appointment__traektolog-info dg rg-4">
+                      <p class="appointment__traektolog-name">Инна Фадеева</p>
+                      <p class="appointment__traektolog-type">Траектолог</p>
+                      <p class="appointment__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                        выявляет срочную
+                        потребность системы обучения кадров и еще тест</p>
+                        <div class="appointment__traektolog-numbers">
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>145</span>
+                            <p>построенных траекторий</p>
+                          </div>
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>4</span>
+                            <p>года <br/> успешной работы</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appointment__traektolog-item">
+                  <div class="appointment__traektolog-item-info">
+                    <div class="appointment__traektolog-img">
+                      <img src="images/mockImg/traektolog3.png" alt="фото траектолога">
+                    </div>
+                    <div class="appointment__traektolog-info dg rg-4">
+                      <p class="appointment__traektolog-name">Анастасия Мельничук</p>
+                      <p class="common__traektolog-nastavnik">Траектолог-наставник</p>
+                      <p class="appointment__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                        выявляет срочную
+                        потребность системы обучения кадров и еще тест</p>
+                        <div class="appointment__traektolog-numbers">
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>145</span>
+                            <p>построенных траекторий</p>
+                          </div>
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>4</span>
+                            <p>года <br/> успешной работы</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appointment__traektolog-item">
+                  <div class="appointment__traektolog-item-info">
+                    <div class="appointment__traektolog-img">
+                      <img src="images/mockImg/traektolog4.png" alt="фото траектолога">
+                    </div>
+                    <div class="appointment__traektolog-info dg rg-4">
+                      <p class="appointment__traektolog-name">Алексей Иванов</p>
+                      <p class="common__traektolog-nastavnik">Траектолог-наставник</p>
+                      <p class="appointment__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                        выявляет срочную
+                        потребность системы обучения кадров и еще тест</p>
+                        <div class="appointment__traektolog-numbers">
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>145</span>
+                            <p>построенных траекторий</p>
+                          </div>
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>4</span>
+                            <p>года <br/> успешной работы</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="appointment__traektolog-item">
+                  <div class="appointment__traektolog-item-info">
+                    <div class="appointment__traektolog-img">
+                      <img src="images/mockImg/traektolog5.png" alt="фото траектолога">
+                    </div>
+                    <div class="appointment__traektolog-info dg rg-4">
+                      <p class="appointment__traektolog-name">Иван Кузнецов</p>
+                      <p class="common__traektolog-founder">Основатель</p>
+                      <p class="appointment__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
+                        выявляет срочную
+                        потребность системы обучения кадров и еще тест</p>
+                        <div class="appointment__traektolog-numbers">
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>145</span>
+                            <p>построенных траекторий</p>
+                          </div>
+                          <div class="appointment__traektolog-numbers-item">
+                            <span>4</span>
+                            <p>года <br/> успешной работы</p>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-------------------------------- step 2 --------------------------------------------->
+            <div class="appointment__selected-traektolog">
+              <div class="common-title-withIcon mb-16">
+                <i class="icon-profile"></i>
+                <span>Ваш траектолог</span>
+              </div>
+
+              <div class="common-traektolog__info mb-32">
+                <div class="info">
+                  <div class="img">
+                    <img src="images/mockImg/traektolog.png" alt="Анастасия Мельничук" />
+                  </div>
+                  <div class="traektolog-info">
+                    <p class="name">Анастасия Мельничук</p>
+                    <p class="common__traektolog-nastavnik traektolog-role mb-12">Траектолог-наставник</p>
+                    <div class="numbers">
+                      <div class="numbers-item">
+                        <span>145</span>
+                        <p>построенных траекторий</p>
+                      </div>
+                      <div class="numbers-item">
+                        <span>4</span>
+                        <p>года успешной работы</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="g-med-text mb-24">
+                  Но многие известные личности освещают чрезвычайно интересные особенности картины в целом,
+                  однако конкретные выводы, разумеется, в равной степени предоставлены сами себе.
+                  Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности не
+                  даёт нам иного выбора, кроме определения новых принципов формирования
+                  материально-технической и кадровой базы. Каждый из нас понимает очевидную вещь: внедрение
+                  современных методик говорит о возможностях прогресса профессионального сообщества.
+                </p>
+            </div>
+
+              <div class="mb-16">
+                <div class="common-title-withIcon mb-16">
+                  <i class="icon-calendar"></i>
+                  <span>Укажите удобную дату и время</span>
+                </div>
+
+                <div class="appointment__table mb-16">
+                  <div class="table__header">
+                    <div class="table__column--left table__header-item">
+                      <span>Выберите дату</span>
+                    </div>
+                    <div class="table__column--right table__header-item">
+                      <span>Выберите время</span>
+                    </div>
+                  </div>
+                  <div class="table__body">
+                    <div class="table__column--left">
+                      <div class="table__item">
+                        <input type="radio" id="date-1" name="date-radio">
+                        <label for="date-1" class="unselectable g-text-fs-14">12 авг, пн</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-2" name="date-radio">
+                        <label for="date-2" class="unselectable g-text-fs-14">14 авг, ср</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-3" name="date-radio">
+                        <label for="date-3" class="unselectable g-text-fs-14">14 авг, ср</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-4" name="date-radio">
+                        <label for="date-4" class="unselectable g-text-fs-14">16 авг, сб</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-5" name="date-radio">
+                        <label for="date-5" class="unselectable g-text-fs-14">18 авг, пн</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-6" name="date-radio">
+                        <label for="date-6" class="unselectable g-text-fs-14">23 авг, пн</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-7" name="date-radio">
+                        <label for="date-7" class="unselectable g-text-fs-14">26 авг, сб</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-8" name="date-radio">
+                        <label for="date-8" class="unselectable g-text-fs-14">1 сен, ср</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="date-9" name="date-radio">
+                        <label for="date-9" class="unselectable g-text-fs-14">10 сен, вс</label>
+                      </div>
+                    </div>
+
+                    <div class="table__column--right">
+                      <div class="table__item">
+                        <input type="radio" id="time-1" name="time-radio">
+                        <label for="time-1" class="unselectable g-text-fs-14">12:00-13:00</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="time-2" name="time-radio">
+                        <label for="time-2" class="unselectable g-text-fs-14">13:00-14:00</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="time-3" name="time-radio">
+                        <label for="time-3" class="unselectable g-text-fs-14">14:00-15:00</label>
+                      </div>
+
+                      <div class="table__item">
+                        <input type="radio" id="time-4" name="time-radio">
+                        <label for="time-4" class="unselectable g-text-fs-14">18:00-19:00</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-checkbox mb-8">
+                  <input type="checkbox" id="no-date" name="no-date">
+                  <label for="no-date" class="unselectable form-checkbox-label">Нет подходящего времени</label>
+                </div>
+
+                <p class="g-med-text mb-32">Выберите этот пункт и мы сами свяжемся с вами после оплаты, чтобы уточнить время проведения сессии, которое вам подойдёт</p>
+              </div>
+
+              <div class="dg rg-32">
+                <div class="dg rg-12">
+                  <div class="common__pay-item">
+                    <span class="g-text-gray">Тариф</span>
+                    <span>Продвинутый</span>
+                  </div>
+                  <div class="common__pay-item">
+                    <span class="g-text-gray">К оплате</span>
+                    <span>29 999₽</span>
+                  </div>
+                </div>
+                <button class="main-btn pay-btn goToPay">Перейти к оплате</button>
+              </div>
+            </div>
+
+            <!-------------------------------- step 3 - переход на страницу с модулем оплаты --------------------------------------------->
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__company">
+          <a class="footer__company-logo" href="/">
+            <img src="images/logo.svg" alt="Логотип платформы" />
+          </a>
+          <div class="footer__company-share">
+            <span>Поделиться:</span>
+            <div class="footer__company-share-list">
+              <a href="#">
+                <i class="icon-telegram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i class="icon-vk"></i>
+              </a>
+            </div>
+          </div>
+          <a href="/confidention.html" class="g-text-gray g-text-fs-12 g-text-med">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts dg rg-12">
+          <div class="footer__contacts-social">
+            <a href="#">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+          <a href="tel:+79266028511" class="g-text-med">+7 926 602 85 11</a>
+          <a href="mailto:pp@entspace.com" class="g-text-med g-text-blue900">pp@entspace.com</a>
+          <p class="g-text-gray g-text-med g-text-fs-12">© ИП Комаров А. А. 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/lib.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

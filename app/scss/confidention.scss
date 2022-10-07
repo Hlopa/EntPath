@@ -1,0 +1,37 @@
+.confidention-block{
+  h3{
+    font-family: 'raleway-bold';
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  p{
+    line-height: 135%;
+    color: $gray-dark;
+  }
+
+  span{
+    font-family: 'raleway-semibold';
+    color: black;
+
+  }
+
+  a{
+    color: #3770FF;
+  }
+
+  ul{
+
+  }
+
+  li{
+    color: $gray-dark;
+    padding-left: 12px;
+  padding-bottom: 4px;  }
+
+
+  .bold{
+    font-family: 'raleway-semibold';
+    color: black;
+  }
+}

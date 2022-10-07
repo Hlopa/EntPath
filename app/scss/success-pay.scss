@@ -1,12 +1,45 @@
-.success-pay{
-   width: 632px;
-  margin: 10px auto 50px auto;
-  padding: 32px 40px 40px;
+.success-pay__container {
+  max-width: 664px;
+  margin: 0px auto;
+  padding: 40px 32px;
+  position: relative;
+}
 
+.success-pay__title {
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 16px;
 }
 
 
-.success-pay__title{
+.success-pay__traektolog-type {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 14px;
+  color: $gray;
+  font-family: 'raleway-semibold';
+}
+
+.success-pay__title {
   font-size: 32px;
   line-height: 125%;
+}
+
+
+@media (max-width: 600px) {
+  .success-pay__traektolog-type {
+    position: relative;
+    top: unset;
+    right: unset
+  }
+
+  .success-pay__title {
+    font-size: 24px;
+    line-height: 125%;
+    margin-bottom: 16px;
+    margin-bottom: 4px;
+  }
+
+
 }

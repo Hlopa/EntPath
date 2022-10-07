@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Запись на консультацию</title>
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntPath - Оплата</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
@@ -20,35 +20,50 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="content">
     <header class="header">
-      <a href="/">
-        <img src="images/logo.svg" alt="Логотип платформы">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-          <li class="header-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="header-nav__btn">
-          <button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
-          <div class="header-profile__menu">
-            <ul>
-              <li class="header-profile__menu-item">
-                <img src="images/icons/profile-small.svg"><span>Личный кабинет</span>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__burgerWithLogo">
+            <div class="header__burger">
+              <span class="header__burger-span"></span>
+            </div>
+            <a href="/">
+              <img src="images/logo.svg" alt="Логотип платформы" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-mobileTitle">Меню</li>
+              <li class="header__nav-item">
+                <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
               </li>
-              <li class="header-profile__menu-item header-profile__menu-item--danger">
-                <img src="images/icons/out.svg"><span>Выйти из личного кабинета</span>
+              <li class="header__nav-item">
+                <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Контакты <i class="icon-arrow-right"></i></a>
               </li>
             </ul>
-          </div>
+            <div class="header__nav-btn">
+              <button class="secondary-btn small-btn header-profile__btn">
+                Алексей <i class="icon-arrow-down" style="font-size: 10px"></i>
+              </button>
+              <div class="header-profile__menu">
+                <ul>
+                  <li class="header-profile__menu-item header-profile__menu-item--danger">
+                    <a href="/auth.html"> <img src="images/icons/out.svg" /><span>Выйти</span> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <body>
-      <main>
+    <div class="container">
+      <main class="g-page-container">
         <div class="pay-modul">
           <div class="pay-block">
             <p class="mb-24"> Платежный модуль</p>
@@ -56,8 +71,61 @@
           </div>
         </div>
       </main>
-    </body>
+      </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__company">
+          <a class="footer__company-logo" href="/">
+            <img src="images/logo.svg" alt="Логотип платформы" />
+          </a>
+          <div class="footer__company-share">
+            <span>Поделиться:</span>
+            <div class="footer__company-share-list">
+              <a href="#">
+                <i class="icon-telegram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i class="icon-vk"></i>
+              </a>
+            </div>
+          </div>
+          <a href="/confidention.html" class="g-text-gray g-text-fs-12 g-text-med">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts dg rg-12">
+          <div class="footer__contacts-social">
+            <a href="#">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+          <a href="tel:+79266028511" class="g-text-med">+7 926 602 85 11</a>
+          <a href="mailto:pp@entspace.com" class="g-text-med g-text-blue900">pp@entspace.com</a>
+          <p class="g-text-gray g-text-med g-text-fs-12">© ИП Комаров А. А. 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="js/lib.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

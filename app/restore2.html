@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Восстановление пароля</title>
+  <title>EntPath - Восстановление пароля</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
@@ -20,25 +20,36 @@
 </head>
 
 <body>
-  <div class="container">
     <header class="header">
-      <a href="/">
-        <img src="images/logo.svg" alt="Логотип платформы">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-          <li class="header-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__burgerWithLogo">
+            <div class="header__burger">
+              <span class="header__burger-span"></span>
+            </div>
+            <a href="/">
+              <img src="images/logo.svg" alt="Логотип платформы">
+            </a>
+          </div>
+  
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__mobileTitle">Меню</li>
+              <li class="header-nav__item"><a href="#">О траектории <i class="icon-arrow-right"></i>
+                </a></li>
+              <li class="header-nav__item"><a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a></li>
+              <li class="header-nav__item"><a href="#">Контакты <i class="icon-arrow-right"></i></a></li>
+            </ul>
+            <div class="header-nav__btn">
+              <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
-
+    <div class="container">
     <body>
-      <main class="g-page-container">
+      <main class="g-big-page-container">
         <div class="form-main">
           <div class="form-header">
             <h1 class="main-title">Новый пароль</h1>

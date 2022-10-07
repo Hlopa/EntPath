@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Live Track - Профиль</title>
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/style.min.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EntPath - Профиль</title>
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
 	<link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
 	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
@@ -20,243 +20,485 @@
 </head>
 
 <body>
-	<div class="container">
-		<header class="header">
-			<a href="/">
-				<img src="images/logo.svg" alt="Логотип платформы">
-			</a>
-			<nav class="header-nav">
-				<ul class="header-nav__list">
-					<li class="header-nav__item"><a href="#">О траектории</a></li>
-					<li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-					<li class="header-nav__item"><a href="#">Контакты</a></li>
-				</ul>
-				<div class="header-nav__btn">
-					<button class="secondary-btn header-profile__btn">Алексей Скороходов</button>
-					<div class="header-profile__menu">
-						<ul>
-							<li class="header-profile__menu-item">
-								<a href="/">
-									<i class="icon-user icon-user-header-menu"></i>
-									<span>Личный кабинет</span>
-								</a>
-							</li>
-							<li class="header-profile__menu-item header-profile__menu-item--danger">
-								<a href="/auth.html">
-									<i class="icon-out"></i>
-									<span>Выйти из личного кабинета</span>
-								</a>
-							</li>
-						</ul>
+ <div class="content">
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__burgerWithLogo">
+					<div class="header__burger">
+						<span class="header__burger-span"></span>
 					</div>
+					<a href="/">
+						<img src="images/logo.svg" alt="Логотип платформы" />
+					</a>
 				</div>
-			</nav>
-		</header>
 
-		<body>
-			<main class="profile g-page">
-				<div class="profile-grid">
-					<div class="profile-grid__half-block">
-						<!---------------------- Профайл пользователя ---------------------->
-						<article class="g-block ">
-							<div class="profile__block-header mb-16">
-								<i class="icon-user"></i>
-								<h3 class="profile__block-title">Профиль</h3>
-							</div>
+				<nav class="header__nav">
+					<ul class="header__nav-list">
+						<li class="header__nav-mobileTitle">Меню</li>
+						<li class="header__nav-item">
+							<a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+						</li>
+						<li class="header__nav-item">
+							<a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+						</li>
+						<li class="header__nav-item">
+							<a href="#">Контакты <i class="icon-arrow-right"></i></a>
+						</li>
+					</ul>
+					<div class="header__nav-btn">
+						<button class="secondary-btn small-btn header-profile__btn">
+							Алексей <i class="icon-arrow-down" style="font-size: 10px"></i>
+						</button>
+						<div class="header-profile__menu">
+							<ul>
+								<li class="header-profile__menu-item header-profile__menu-item--danger">
+									<a href="/auth.html"> <img src="images/icons/out.svg" /><span>Выйти</span> </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-							<ul class="dg rg-16 mb-24">
-								<li>
+	<div class="container">
+		<main class="profile g-page">
+			<div class="profile-grid">
+				<div class="profile-grid__half-block">
+					<!---------------------- Профайл пользователя ---------------------->
+					<article class="g-block df fl-d-c">
+						<div class="profile__block-header mb-16">
+							<i class="icon-profile" style="font-size: 20px"></i>
+							<h3 class="profile__block-title">Профиль</h3>
+						</div>
+
+						<div class="mb-24" style="flex-grow: 1">
+							<ul class="dg rg-16">
+								<li class="profile__info-item">
 									<span class="g-text-gray">ФИО:</span>
 									<span>Скороходов Алексей, 32 года</span>
 								</li>
-								<li>
+								<li class="profile__info-item">
 									<span class="g-text-gray">Дата рождения:</span>
 									<span>15.06.1990</span>
 								</li>
-								<li>
+								<li class="profile__info-item">
 									<span class="g-text-gray">Страна, город:</span>
 									<span>Россия, Москва</span>
 								</li>
-								<li>
+								<li class="profile__info-item">
 									<span class="g-text-gray">Должность:</span>
 									<span>UI-дизайнер</span>
 								</li>
-								<li>
+								<li class="profile__info-item">
 									<span class="g-text-gray">Телефон:</span>
 									<span>+7 (999) 888 88 88</span>
 								</li>
-								<li>
+								<li class="profile__info-item">
 									<span class="g-text-gray">Электронная почта: </span>
 									<span>alexXx_skorohod@mail.ru</span>
 								</li>
+								<li class="profile__info-item">
+									<span class="g-text-gray">Удобный способ связи:</span>
+									<span>Telegram, WhatsApp, телефон</span>
+								</li>
 							</ul>
+						</div>
 
-							<a href="/edit-profile.html" class="secondary-btn">
+						<div class="profile__btn">
+							<a href="/edit-profile.html" class="secondary-btn medium-btn">
 								<i class="icon-edit btn-icon-edit"></i>
 								Изменить
 							</a>
-						</article>
+						</div>
+					</article>
 
-						<!---------------------- Сессия с траектологом ---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
-
-							<div class="mb-24 dg rg-16">
-								<p class="g-text-semibold">Понедельник, 24 августа, 15:00 (МСК)</p>
-								<div class="profile__traektolog">
-									<div class="profile__traektolog-img">
-										<img src="images/mockImg/traektolog.png" alt="Фото траектолога">
-									</div>
-									<div>
-										<p class="profile__traektolog-title">Ваш траектолог</p>
-										<p class="g-text-semibold">Александра Галицкая</p>
-										<p class="profile__traektolog-descr">Ясность нашей позиции очевидна: граница обучения кадров
-											выявляет срочную потребность системы обучения кадров</p>
-									</div>
-								</div>
-								<div class="dg rg-8">
-									<a href="#" class="main-btn small-btn">Перейти к встрече</a>
-									<p class="g-text-gray g-text-fs-12">По нажатию кнопки будет открыта ссылка на звонок в «Zoom»
-									</p>
-								</div>
-							</div>
-
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если хотите изменить дату встречи, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
-
-						<!---------------------- Сессии еще нет ---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
-
-							<p class="g-text-semibold mb-24">Следующая сессия будет установлена позже, ожидайте администратора</p>
-
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
-
-						<!---------------------- Сессии еще нет, выбрать тариф---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
-
-							<div class="mb-24">
-								<p class="g-text-semibold mb-16">Выберите тариф для записи на сессию</p>
-								<a class="main-btn small-btn" href="/tariffs.html">Смотреть тарифы</a>
-							</div>
-
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
-
-						<!---------------------- Сессия прошла---------------------->
-						<article class="g-block">
-							<div class="profile__block-header mb-16">
-								<img src="images/icons/clock.svg">
-								<h3 class="profile__block-title">Сессия с траектологом</h3>
-							</div>
-
-							<p class="g-text-gray g-text-fs-12 mb-16">Сессия прошла</p>
-
-							<div class="dg rg-6">
-								<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
-								<ul class="common__contacts-list">
-									<li class="common__contacts-item">
-										<a href="tel:+79998888888" aria-label="контактный телефон">
-											<i class="icon-phone"></i>
-											+7 (999) 888 88 88</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://wa.me/79200000000" aria-label="Whatsapp" target='_blank' rel="noreferrer">
-											<i class="icon-whatsapp"></i>
-											WhatsApp</a>
-									</li>
-									<li class="common__contacts-item">
-										<a href="https://t.me/p_strana" aria-label="Телеграм" target='_blank' rel="noreferrer">
-											<i class="icon-telegram"></i>
-											Telegram</a>
-									</li>
-								</ul>
-							</div>
-						</article>
-					</div>
-
-					<!---------------------- Блок с ссылкой на траекторию---------------------->
+					<!---------------------- Сессия с траектологом ---------------------->
 					<article class="g-block">
 						<div class="profile__block-header mb-16">
-							<img src="images/icons/logo-icon.svg">
-							<h3 class="profile__block-title">Ваша траектория</h3>
+							<img src="images/icons/clock.svg" />
+							<h3 class="profile__block-title">Сессия с траектологом</h3>
 						</div>
 
-						<a href="https://www.skolkovo.ru/professors/aleksey-komarov/"
-							class="g-text-fs-14 color-main g-text-semibold" target='_blank' rel="noreferrer"
-							aria-label="Ссылка на вашу траекторию">https://www.skolkovo.ru/professors/aleksey-komarov/</a>
+						<div class="mb-24 dg rg-16">
+							<div class="dg rg-8">
+								<p class="g-text-gray g-text-fs-14 g-text-semibold">
+									Тариф: Траектолог-наставник, 50 000₽
+								</p>
+								<p class="g-text-semibold">Понедельник, 24 августа, 15:00 (МСК)</p>
+								<button class="btn-text">Добавить в календарь</button>
+							</div>
+
+							<div class="profile__traektolog">
+								<p class="profile__traektolog-title display-mobile">Ваш траектолог</p>
+								<div class="profile__traektolog-img">
+									<img src="images/mockImg/traektolog.png" alt="Фото траектолога" />
+								</div>
+								<div>
+									<p class="profile__traektolog-title display-desc">Ваш траектолог</p>
+									<div class="profile__traektolog-info">
+										<p class="g-text-semibold">Александра Галицкая</p>
+										<p class="common__traektolog-nastavnik">Траектолог-наставник</p>
+										<p class="profile__traektolog-descr">
+											Ясность нашей позиции очевидна: граница обучения кадров выявляет срочную
+											потребность системы обучения кадров
+										</p>
+										<button class="btn-text btn-text--small btn-profile__about-traektolog">
+											Подробнее...
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="dg rg-8">
+								<div class="profile__btn">
+									<a href="#" class="main-btn medium-btn">Перейти к встрече</a>
+								</div>
+								<p class="g-text-gray g-text-fs-12">
+									По нажатию кнопки будет открыта ссылка на звонок в «Zoom»
+								</p>
+							</div>
+						</div>
+
+						<div class="dg rg-6">
+							<p class="g-text-gray g-text-fs-12">
+								Для получения консультации по личной траектории или бизнесу, вы можете записаться
+								к траектологу через администратора
+							</p>
+							<ul class="common__contacts-list">
+								<li class="common__contacts-item">
+									<a href="tel:+79998888888" aria-label="контактный телефон">
+										<i class="icon-phone"></i>
+										+7 (999) 888 88 88</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://wa.me/79200000000" aria-label="Whatsapp" target="_blank" rel="noreferrer">
+										<i class="icon-whatsapp"></i>
+										WhatsApp</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://t.me/p_strana" aria-label="Телеграм" target="_blank" rel="noreferrer">
+										<i class="icon-telegram"></i>
+										Telegram</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<!---------------------- Сессии еще нет ---------------------->
+					<article class="g-block">
+						<div class="profile__block-header mb-16">
+							<img src="images/icons/clock.svg" />
+							<h3 class="profile__block-title">Сессия с траектологом</h3>
+						</div>
+
+						<p class="g-text-semibold mb-24">
+							Следующая сессия будет установлена позже, ожидайте администратора
+						</p>
+
+						<div class="dg rg-6">
+							<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+							<ul class="common__contacts-list">
+								<li class="common__contacts-item">
+									<a href="tel:+79998888888" aria-label="контактный телефон">
+										<i class="icon-phone"></i>
+										+7 (999) 888 88 88</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://wa.me/79200000000" aria-label="Whatsapp" target="_blank" rel="noreferrer">
+										<i class="icon-whatsapp"></i>
+										WhatsApp</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://t.me/p_strana" aria-label="Телеграм" target="_blank" rel="noreferrer">
+										<i class="icon-telegram"></i>
+										Telegram</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<!---------------------- Сессии еще нет, выбрать тариф---------------------->
+					<article class="g-block">
+						<div class="profile__block-header mb-16">
+							<img src="images/icons/clock.svg" />
+							<h3 class="profile__block-title">Сессия с траектологом</h3>
+						</div>
+
+						<div class="mb-24">
+							<p class="g-text-semibold mb-16">Выберите тариф для записи на сессию</p>
+							<div class="profile__btn">
+								<a class="main-btn medium-btn" href="/tariffs.html">Смотреть тарифы</a>
+							</div>
+						</div>
+
+						<div class="dg rg-6">
+							<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+							<ul class="common__contacts-list">
+								<li class="common__contacts-item">
+									<a href="tel:+79998888888" aria-label="контактный телефон">
+										<i class="icon-phone"></i>
+										+7 (999) 888 88 88</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://wa.me/79200000000" aria-label="Whatsapp" target="_blank" rel="noreferrer">
+										<i class="icon-whatsapp"></i>
+										WhatsApp</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://t.me/p_strana" aria-label="Телеграм" target="_blank" rel="noreferrer">
+										<i class="icon-telegram"></i>
+										Telegram</a>
+								</li>
+							</ul>
+						</div>
+					</article>
+
+					<!---------------------- Сессия прошла---------------------->
+					<article class="g-block">
+						<div class="profile__block-header mb-16">
+							<img src="images/icons/clock.svg" />
+							<h3 class="profile__block-title">Сессия с траектологом</h3>
+						</div>
+
+						<p class="g-text-gray g-text-fs-12 mb-16">Сессия прошла</p>
+
+						<div class="dg rg-6">
+							<p class="g-text-gray g-text-fs-14">Если у вас есть вопросы, свяжитесь с нами</p>
+							<ul class="common__contacts-list">
+								<li class="common__contacts-item">
+									<a href="tel:+79998888888" aria-label="контактный телефон">
+										<i class="icon-phone"></i>
+										+7 (999) 888 88 88</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://wa.me/79200000000" aria-label="Whatsapp" target="_blank" rel="noreferrer">
+										<i class="icon-whatsapp"></i>
+										WhatsApp</a>
+								</li>
+								<li class="common__contacts-item">
+									<a href="https://t.me/p_strana" aria-label="Телеграм" target="_blank" rel="noreferrer">
+										<i class="icon-telegram"></i>
+										Telegram</a>
+								</li>
+							</ul>
+						</div>
 					</article>
 				</div>
-			</main>
-		</body>
+
+				<!---------------------- Блок без ссылки на траекторию---------------------->
+				<article class="g-block">
+					<div class="mb-16 df fl-ai-c fl-jc-sb">
+						<div class="profile__block-header">
+							<img src="images/icons/traektoria.svg" />
+							<h3 class="profile__block-title">Ваша траектория</h3>
+						</div>
+					</div>
+					<p class="g-text-gray g-text-semibold g-text-fs-14">Ссылка на траекторию будет позже</p>
+				</article>
+
+				<!---------------------- Блок с ссылкой на траекторию---------------------->
+				<article class="g-block profile__traektoria">
+					<div class="profile__traektoria-header">
+						<div class="profile__block-header">
+							<img src="images/icons/traektoria.svg" />
+							<h3 class="profile__block-title">Ваша траектория</h3>
+						</div>
+						<button class="secondary-btn small-btn display-desc btn-grade-traektory-modal">
+							Оцените построение траектории
+						</button>
+					</div>
+					<a href="https://www.skolkovo.ru/professors/aleksey-komarov/" class="g-text-fs-14 color-main g-text-semibold"
+						target="_blank" rel="noreferrer"
+						aria-label="Ссылка на вашу траекторию">https://www.skolkovo.ru/professors/aleksey-komarov/</a>
+
+					<button class="secondary-btn small-btn display-mobile btn-grade-traektory-modal">
+						Оцените построение траектории
+					</button>
+				</article>
+			</div>
+		</main>
+	</div>
+</div>
+	<footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__company">
+          <a class="footer__company-logo" href="/">
+            <img src="images/logo.svg" alt="Логотип платформы" />
+          </a>
+          <div class="footer__company-share">
+            <span>Поделиться:</span>
+            <div class="footer__company-share-list">
+              <a href="#">
+                <i class="icon-telegram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i class="icon-vk"></i>
+              </a>
+            </div>
+          </div>
+          <a href="/confidention.html" class="g-text-gray g-text-fs-12 g-text-med">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts dg rg-12">
+          <div class="footer__contacts-social">
+            <a href="#">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+          <a href="tel:+79266028511" class="g-text-med">+7 926 602 85 11</a>
+          <a href="mailto:pp@entspace.com" class="g-text-med g-text-blue900">pp@entspace.com</a>
+          <p class="g-text-gray g-text-med g-text-fs-12">© ИП Комаров А. А. 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+	<div class="modal profile__about-traektolog-modal common-traektolog__info">
+		<div class="modal-wrapper">
+			<div class="modal-close">
+				<i class="icon-cross"></i>
+			</div>
+			<p class="title">Ваш траектолог</p>
+			<div class="info">
+				<div class="img">
+					<img src="images/mockImg/traektolog.png" alt="Анастасия Мельничук" />
+				</div>
+				<div class="traektolog-info">
+					<p class="name">Анастасия Мельничук</p>
+					<p class="common__traektolog-nastavnik traektolog-role mb-12">Траектолог-наставник</p>
+					<div class="numbers">
+						<div class="numbers-item">
+							<span>145</span>
+							<p>построенных траекторий</p>
+						</div>
+						<div class="numbers-item">
+							<span>4</span>
+							<p>года успешной работы</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="g-med-text mb-24">
+				Но многие известные личности освещают чрезвычайно интересные особенности картины в целом,
+				однако конкретные выводы, разумеется, в равной степени предоставлены сами себе.
+				Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности не
+				даёт нам иного выбора, кроме определения новых принципов формирования
+				материально-технической и кадровой базы. Каждый из нас понимает очевидную вещь: внедрение
+				современных методик говорит о возможностях прогресса профессионального сообщества.
+			</p>
+			<div class="comment">
+				<p class="g-text-semibold mb-16">Отзывы (177)</p>
+				<div class="input-group input-group-white">
+					<textarea class="input-main input-multiline" placeholder="Оставьте ваш отзыв..." id="comment"
+						rows="4"></textarea>
+				</div>
+				<button class="main-btn small-btn mb-24" style="width: 195px">Отправить</button>
+				<div class="comments dg rg-8 mb-24">
+					<div class="comments-item">
+						<div class="comments-item_header">
+							<p class="comments-item_name">Александр</p>
+							<div class="comments-ratind" data-rating="4"></div>
+						</div>
+						<p class="g-med-text">
+							Но многие известные личности освещают чрезвычайно интересные особенности картины в
+							целом, Но многие известные личности освещают чрезвычайно интересные особенности
+							картины в целом
+						</p>
+					</div>
+
+					<div class="comments-item">
+						<div class="comments-item_header">
+							<p class="comments-item_name">Евгений</p>
+							<div class="comments-ratind" data-rating="3"></div>
+						</div>
+						<p class="g-med-text">
+							Но многие известные личности освещают чрезвычайно интересные особенности картины в
+							целом
+						</p>
+					</div>
+
+					<div class="comments-item">
+						<div class="comments-item_header">
+							<p class="comments-item_name">Константин</p>
+							<div class="comments-ratind" data-rating="4"></div>
+						</div>
+						<p class="g-med-text">
+							Но многие известные личности освещают чрезвычайно интересные особенности картины в
+							целом, Но многие известные личности освещают чрезвычайно интересные особенности
+							картины в целом, Но многие известные личности освещают чрезвычайно интересные
+							особенности картины в целом
+						</p>
+					</div>
+
+					<div class="comments-item">
+						<div class="comments-item_header">
+							<p class="comments-item_name">Мария</p>
+							<div class="comments-ratind" data-rating="5"></div>
+						</div>
+						<p class="g-med-text">
+							Но многие известные личности освещают чрезвычайно интересные особенности картины в
+							целом, Но многие известные личности освещают чрезвычайно интересные особенности
+							картины в целом
+						</p>
+					</div>
+
+					<div class="comments-item">
+						<div class="comments-item_header">
+							<p class="comments-item_name">Анна</p>
+							<div class="comments-ratind" data-rating="5"></div>
+						</div>
+						<p class="g-med-text">
+							Но многие известные личности освещают чрезвычайно интересные особенности картины в
+							целом, Но многие известные личности освещают чрезвычайно интересные особенности
+							картины в целом
+						</p>
+					</div>
+				</div>
+				<button class="secondary-btn small-btn comments-btn">Загрузить ещё</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal profile__grade-traektory-modal">
+		<div class="modal-wrapper">
+			<div class="modal-close">
+				<i class="icon-cross"></i>
+			</div>
+			<div class="top-block">
+				<p class="g-main-title mb-8">Оцените, пожалуйста, построение траектории</p>
+				<p class="g-med-text mb-32">
+					Поставьте вашу оценку от 1 до 5. Если вам есть что сказать, можете оставить комментарий
+				</p>
+				<div class="grade-traektory-rating"></div>
+			</div>
+
+			<div class="input-group">
+				<textarea class="input-main input-multiline" placeholder="Ваш комментарий..." id="grade-traektory-comment"
+					rows="5"></textarea>
+			</div>
+			<button class="main-btn mb-16" style="width: 100%">Отправить</button>
+		</div>
 	</div>
 	<script src="js/lib.min.js"></script>
 	<script src="js/main.min.js"></script>

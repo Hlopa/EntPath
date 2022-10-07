@@ -2,7 +2,94 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  //=============Открытие и  закрытие меню в зедере====================//
+
+  //появление модалок
+
+  const btnProfileAboutTraektolog = document.querySelector('.btn-profile__about-traektolog');
+  const modalProfileAboutTraektolog = document.querySelector('.profile__about-traektolog-modal');
+
+  const modalGradeTraektory = document.querySelector('.profile__grade-traektory-modal');
+  const btnGradeTraektory = document.querySelectorAll('.btn-grade-traektory-modal');
+
+  const modalHelpRestore = document.querySelector('.help-restore-modal');
+  const btnHelpRestore = document.querySelector('.btn-help-restore');
+
+  const modalClose = document.querySelectorAll('.modal-close');
+
+  if (btnProfileAboutTraektolog) {
+    btnProfileAboutTraektolog.addEventListener('click', function (e) {
+      modalProfileAboutTraektolog.classList.add('modal--open');
+    })
+    modalClose.forEach((item) => {
+      item.addEventListener('click', function (e) {
+        modalProfileAboutTraektolog.classList.remove('modal--open');
+      })
+    })
+  }
+
+  if (btnGradeTraektory) {
+    btnGradeTraektory.forEach((item) => {
+      item.addEventListener('click', function (e) {
+        modalGradeTraektory.classList.add('modal--open');
+      })
+    })
+    modalClose.forEach((item) => {
+      item.addEventListener('click', function (e) {
+        modalGradeTraektory.classList.remove('modal--open');
+      })
+    })
+  }
+
+  if (btnHelpRestore) {
+    btnHelpRestore.addEventListener('click', function (e) {
+      modalHelpRestore.classList.add('modal--open');
+    })
+    modalClose.forEach((item) => {
+      item.addEventListener('click', function (e) {
+        modalHelpRestore.classList.remove('modal--open');
+      })
+    })
+  }
+
+
+  //star rating
+
+  $(".comments-ratind").starRating({
+    totalStars: 5,
+    emptyColor: '#E0E0E6',
+    activeColor: '#FFE318',
+    starSize: 16,
+    strokeWidth: 0,
+    useGradient: false,
+    readOnly: true
+  });
+
+  $(".grade-traektory-rating").starRating({
+    totalStars: 5,
+    emptyColor: '#E0E0E6',
+    activeColor: '#FFE318 !important',
+    ratedColor: '#FFE318 !important',
+    hoverColor: '#FFF083',
+    starSize: 48,
+    strokeWidth: 0,
+    useGradient: false,
+    starShape: 'rounded',
+    useFullStars: true,
+  });
+
+
+
+  //Открытие/закрытие бургер меню
+
+  $(function () {
+    $('.header__burger').on('click', function () {
+      $('.header__nav-list').slideToggle();
+      $('.header__burger').toggleClass("header__burger--active");
+    });
+
+  });
+
+  //=============Открытие и  закрытие меню в xедере====================//
 
   const headerProfileBtn = document.querySelector('.header-profile__btn');
 
@@ -46,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //=============Логика переключения шагов при записи к траектологу====================//
 
   const appointment__steps = document.querySelector('.appointment__steps');
+  const appointmentFounderBtn = document.querySelector('.appointment__founder-btn');
 
   if (appointment__steps) {
     const traektologies = document.querySelectorAll('.appointment__traektolog-item'),
@@ -62,6 +150,21 @@ document.addEventListener("DOMContentLoaded", () => {
         firstStepBlock.classList.add('transition-left');
         secondStepBlock.classList.add('active')
       })
+    })
+  }
+
+  if (appointmentFounderBtn) {
+
+    const firstStepTab = document.getElementById('appointment__firstStep'),
+      secondStepTab = document.getElementById('appointment__secondStep'),
+      firstStepBlock = document.querySelector('.appointment__traektologies'),
+      secondStepBlock = document.querySelector('.appointment__selected-traektolog');
+    appointmentFounderBtn.addEventListener('click', () => {
+      firstStepTab.classList.remove('active');
+      firstStepTab.classList.add('success');
+      secondStepTab.classList.add('active');
+      firstStepBlock.classList.add('transition-left');
+      secondStepBlock.classList.add('active')
     })
   }
 
@@ -153,17 +256,21 @@ function togglePassword(event, inputId, showEyeId, hideEyeId, evt) {
 
 //======================Функция чтобы выбирался всегда только один чекбокс==============//
 
-  function onlyOne(checkbox) {
-    var checkboxes = document.querySelectorAll('input[type=checkbox]')
-    checkboxes.forEach((item) => {
-        if (item !== checkbox) item.checked = false
-    })
-  }
+function onlyOne(checkbox) {
+  var checkboxes = document.querySelectorAll('input[type=checkbox]')
+  checkboxes.forEach((item) => {
+    if (item !== checkbox) item.checked = false
+  })
+}
 
 
-  //==========================Air Datepicker===============================//
-  const chooseDay = document.getElementById('choose-day-datepicker');
-  if(chooseDay){
-    const chooseDayPicker = new AirDatepicker(chooseDay, []);
-  }
+//==========================Air Datepicker===============================//
+const chooseDay = document.getElementById('choose-day-datepicker');
+const width = window.innerWidth;
+const isMobile = width < 600 ? true : false;
+
+
+if (chooseDay) {
+  const chooseDayPicker = new AirDatepicker(chooseDay, { isMobile: isMobile });
+}
 

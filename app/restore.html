@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Track - Восстановление пароля</title>
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EntPath - Восстановление пароля</title>
+  <link rel="stylesheet" href="css/libs.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <link rel="shortcut icon" href="images/favicons//favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/favicons//apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
@@ -20,46 +20,165 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="content">
     <header class="header">
-      <a href="/">
-        <img src="images/logo.svg" alt="Логотип платформы">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-nav__list">
-          <li class="header-nav__item"><a href="#">О траектории</a></li>
-          <li class="header-nav__item"><a href="/tariffs.html">Тарифы</a></li>
-          <li class="header-nav__item"><a href="#">Контакты</a></li>
-        </ul>
-        <div class="header-nav__btn">
-          <a class="main-btn small-btn" href="/auth.html">Личный кабинет</a>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__burgerWithLogo">
+            <div class="header__burger">
+              <span class="header__burger-span"></span>
+            </div>
+            <a href="/">
+              <img src="images/logo.svg" alt="Логотип платформы" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-mobileTitle">Меню</li>
+              <li class="header__nav-item">
+                <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+              </li>
+            </ul>
+            <div class="header__nav-btn">
+              <button class="secondary-btn small-btn header-profile__btn">
+                Алексей <i class="icon-arrow-down" style="font-size: 10px"></i>
+              </button>
+              <div class="header-profile__menu">
+                <ul>
+                  <li class="header-profile__menu-item header-profile__menu-item--danger">
+                    <a href="/auth.html"> <img src="images/icons/out.svg" /><span>Выйти</span> </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <body>
+    <div class="container">
       <main class="g-page-container">
-          <div class="form-main">
-            <div class="form-header">
-              <h1 class="g-main-title">Восстановить пароль</h1>
-              <p class="form-descr">Введите электронную почту указанную при регистрации, мы отправим на неё код
-                подтверждения</p>
-            </div>
-
-            <form action="#" id="restore">
-              <div class="input-group">
-                <input class="input-main" placeholder=" " id="login-email"
-                  oninput="return cleanInputIcon('login-email', 'login-email-clean')">
-                <label class="input-label">Электронная почта</label>
-                <img src="images/icons/cross.svg" id="login-email-clean" class="input-clean">
-                <div class="input-error-message"></div>
-              </div>
-              <a href="/restore2.html" class="main-btn">Отправить код</a>
-            </form>
+        <a class="back-link" href="/auth.html">
+          <i class="icon-arrow-left"></i>
+          <p>Назад</p>
+        </a>
+        <div class="form-main">
+          <div class="form-header">
+            <h1 class="g-main-title">Восстановить пароль</h1>
+            <p class="form-descr">Введите электронную почту указанную при регистрации, мы отправим на неё код
+              подтверждения</p>
           </div>
+
+          <form action="#" id="restore">
+            <div class="input-group">
+              <input class="input-main" placeholder=" " id="login-email"
+                oninput="return cleanInputIcon('login-email', 'login-email-clean')">
+              <label class="input-label">Электронная почта</label>
+              <img src="images/icons/cross.svg" id="login-email-clean" class="input-clean">
+              <div class="input-error-message"></div>
+            </div>
+            <a href="/restore2.html" class="main-btn mb-58">Отправить ссылку</a>
+            <p class="form-descr g-med-text">Если у вас нет доступа к электронной почте, или вы забыли на какую зарегистрированы, <buttom class="btn-text btn-help-restore">обратитесь к администратору</button>
+              </p>
+          </form>
+        </div>
       </main>
-    </body>
+    </div>
   </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__company">
+          <a class="footer__company-logo" href="/">
+            <img src="images/logo.svg" alt="Логотип платформы" />
+          </a>
+          <div class="footer__company-share">
+            <span>Поделиться:</span>
+            <div class="footer__company-share-list">
+              <a href="#">
+                <i class="icon-telegram"></i>
+              </a>
+              <a href="#">
+                <i class="icon-whatsapp"></i>
+              </a>
+              <a href="#">
+                <i class="icon-vk"></i>
+              </a>
+            </div>
+          </div>
+          <a href="/confidention.html" class="g-text-gray g-text-fs-12 g-text-med">Политика конфиденциальности</a>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#">О траектории <i class="icon-arrow-right"></i> </a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="/tariffs.html">Тарифы<i class="icon-arrow-right"></i></a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#">Контакты <i class="icon-arrow-right"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contacts dg rg-12">
+          <div class="footer__contacts-social">
+            <a href="#">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+          <a href="tel:+79266028511" class="g-text-med">+7 926 602 85 11</a>
+          <a href="mailto:pp@entspace.com" class="g-text-med g-text-blue900">pp@entspace.com</a>
+          <p class="g-text-gray g-text-med g-text-fs-12">© ИП Комаров А. А. 2022</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal help-restore-modal">
+		<div class="modal-wrapper">
+      <div class="help-restore-modal-inner">
+			<div class="modal-close">
+				<i class="icon-cross"></i>
+			</div>
+      <div class="dg rg-24">
+        <div>
+          <img src="images/traektoria-big.svg" alt="">
+        </div>
+        <div>
+           <p class="g-main-title mb-8">Забыли почту?</p>
+           <p class="g-med-text"> Чтобы восстановить доступ к вашему аккаунту, свяжитесь с нами в одном из мессенджеров:</p>
+        </div>
+        <div class="help-restore-modal-contacts">
+          <a href="#" class="help-restore-modal-contacts-item">
+            <i class="icon-telegram"></i>
+            <span>Telegram</span>
+          </a>
+          <a href="#" class="help-restore-modal-contacts-item">
+            <i class="icon-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#" class="help-restore-modal-contacts-item">
+            <i class="icon-vk"></i>
+            <span>VK</span>
+          </a>
+        </div>
+    </div>
+		</div>
+  </div>
+	</div>
   <script src="js/lib.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
+
+</html>

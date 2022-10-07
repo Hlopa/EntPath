@@ -1,0 +1,38 @@
+.help-restore-modal-inner{
+  text-align: center;
+  max-width: 384px;
+  margin: 0px auto;
+}
+
+.help-restore-modal-contacts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.help-restore-modal-contacts-item{
+  background-color: $blue100;
+  border-radius: 16px;
+  flex-basis: 32%;
+  padding: 8px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.3s;
+
+  &:hover{
+    background-color: $blue300;
+  }
+
+  i{
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  span{
+    color: $blue900;
+    font-size: 14px;
+    font-family: 'raleway-medium';
+  }
+}
